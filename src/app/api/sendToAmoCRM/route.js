@@ -1,10 +1,8 @@
-// src/app/api/sendToAmoCRM/route.js
 
 export async function POST(request) {
     try {
       const body = await request.json();
   
-      // Отправка POST-запроса к AmoCRM API
       const response = await fetch('https://adamdediev01.amocrm.ru/api/v4/leads/complex', {
         method: 'POST',
         headers: {
@@ -16,7 +14,6 @@ export async function POST(request) {
   
       const data = await response.json();
   
-      // Возвращаем данные клиенту
       return new Response(JSON.stringify(data), {
         status: 200,
         headers: { 'Content-Type': 'application/json' }
