@@ -18,7 +18,7 @@ function LeadForm() {
           "form_name": "Форма оформления заказа",
           "form_page": "Интернет-магазин (покупка)",
           "ip": "192.168.1.1",
-          "form_sent_at": Date.now() / 1000, // Время отправки в формате UNIX
+          "form_sent_at": Date.now() / 1000, 
           "referer": document.referrer
         },
         "_embedded": {
