@@ -68,7 +68,7 @@ function LeadForm() {
     ];
 
     // Отправка данных на серверную функцию
-    const response = await fetch('/api/sendToAmoCRM', {
+    const response = await fetch('/Reznov/api/sendToAmoCRM', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
