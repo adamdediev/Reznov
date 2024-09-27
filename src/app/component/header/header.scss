@@ -1,0 +1,62 @@
+@import '../../globals.scss';
+
+.header{
+    &__navigation{
+        padding: 10px 0px;
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.1);
+    }
+    &__logo{
+        width: 158px;
+        height: 62px;
+        background: url('/image/logohomepage.svg') no-repeat;
+        @include respond-to($mobile){
+            background: url('/image/logohomepage-mobile.svg') no-repeat;
+            margin-top: 20px;
+        }    }
+    &__btn{
+        text-transform:uppercase;
+        background: #fff;
+        border-radius: 10px;
+        padding: 10px 16px;
+        border: 1px solid #fff;
+        transition:ease 0.4s all;
+        &:hover{
+            background: transparent;
+            color: #85cee4 !important;;
+            border: 1px solid #85CEE4;
+
+        }
+    }
+
+    &__btn-mobile{
+        background: #fff;
+        border-radius: 8px;
+        width: 50px;
+        height: 40px;
+        position: relative;
+        display: none;
+
+        &::after{
+            content: '';
+            background: url('/image/phone-default.svg') no-repeat;
+            width: 20px;
+            height: 21px;
+            position: absolute;
+            top:55%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        @include respond-to($mobile){
+            display: block;
+        }
+    }
+
+    &__phone{
+        color: #fff;
+        font-size: 20px;
+    }
+}

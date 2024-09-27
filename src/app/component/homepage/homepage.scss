@@ -1,0 +1,64 @@
+@import '../../globals.scss';
+
+.homepage{
+    position: relative;
+    &__blue-circle{
+        &-1{
+        position: absolute;
+        width: 688px;
+        height: 688px;
+        background: rgba(133, 206, 228, 0.75);
+        border-radius: 50%;
+        top: -450px;
+        left: -350px;
+        z-index: 0;
+        @include respond-to($tablet){
+            top: -555px;
+        }
+
+    }
+        &-2{
+        position: absolute;
+        width: 460px;
+        height: 460px;
+        background: rgba(133, 206, 228, 0.55);
+        border-radius: 50%;
+        top: -520px;
+        right: -70px;
+        z-index: 0;
+        @include respond-to($mobile){
+            top:10px;
+            background: rgba(133, 206, 228);
+            right: -116px;
+            width: 235px;
+            height: 235px;
+        }
+        }
+    }
+    &__content{
+        h2{
+            margin-top: 7rem;
+            color:#fff;
+            text-transform: uppercase;
+            position: relative;
+            font-size: 4.8rem;
+            text-align: center;
+
+            @include respond-to($pc){
+                font-size: 4rem;
+            }
+
+            @include respond-to($mobile){
+                font-size: 2.5rem;
+                text-align: left;
+                width: 64%;
+                margin-top:2.5rem;
+
+            }
+
+        }
+    }
+
+
+}
+

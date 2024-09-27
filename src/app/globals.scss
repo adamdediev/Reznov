@@ -1,0 +1,60 @@
+@import './css/fonts.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-weight: 500;
+  position: relative;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+main{
+  overflow-x:clip;
+}
+
+.container{
+  width: 100%;
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+
+$pc: 1280px;
+$tablet: 1024px;
+$mobile: 768px;
+$smallMobile: 640px;
+
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == $smallMobile {
+    @media (max-width: $smallMobile) { @content; }
+  } @else if $breakpoint == $mobile {
+    @media (max-width: $mobile) { @content; }
+  } @else if $breakpoint == $tablet {
+    @media (max-width: $tablet) { @content; }
+  } @else if $breakpoint == $pc {
+    @media (max-width: $pc) { @content; }
+  }
+}
