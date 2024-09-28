@@ -11,7 +11,7 @@
     }
     &__logo{
         width: 158px;
-        height: 62px;
+        height: 63px;
         background: url('/../image/logohomepage.svg') no-repeat;
         @include respond-to($mobile){
             background: url('/../image/logohomepage-mobile.svg') no-repeat;
