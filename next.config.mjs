@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output:'export',
-    basePath: '/Reznov',  
+    basePath: '/Reznov/',  
     assetPrefix: '/Reznov/',
     trailingSlash: true,  
 };
