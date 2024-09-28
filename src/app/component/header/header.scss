@@ -11,10 +11,10 @@
     }
     &__logo{
         width: 158px;
-        height: 63px;
-        background: url('/../image/logohomepage.svg') no-repeat;
+        height: 62px;
+        background: url('/image/logohomepage.svg') no-repeat;
         @include respond-to($mobile){
-            background: url('/../image/logohomepage-mobile.svg') no-repeat;
+            background: url('/image/logohomepage-mobile.svg') no-repeat;
             margin-top: 20px;
         }    }
     &__btn{
@@ -42,7 +42,7 @@
 
         &::after{
             content: '';
-            background: url('/../image/phone-default.svg') no-repeat;
+            background: url('/image/phone-default.svg') no-repeat;
             width: 20px;
             height: 21px;
             position: absolute;
