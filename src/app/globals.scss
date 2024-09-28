@@ -58,3 +58,9 @@ $smallMobile: 640px;
     @media (max-width: $pc) { @content; }
   }
 }
+
+$primary:#85CEE4;
+
+$border:8px;
+
+$hover-btn-primary:rgba(255, 255, 255, 0.15);
