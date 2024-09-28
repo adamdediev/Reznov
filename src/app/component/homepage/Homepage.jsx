@@ -15,8 +15,8 @@ export default function Homepage() {
           <button>Бесплатная консультация</button>
         </div>
         <div className="homepage__circle">
-        <img className="homepage__circle--img" src="/image/text-circle.svg" alt="" />
-        <img className="homepage__circle--img-house" src="/image/house.svg" alt="" />
+        <img className="homepage__circle--img" src="./image/text-circle.svg" alt="" />
+        <img className="homepage__circle--img-house" src="./image/house.svg" alt="" />
         </div>
       </div>
     </div>
