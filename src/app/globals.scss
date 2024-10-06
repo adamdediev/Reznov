@@ -1,5 +1,11 @@
 @import './css/fonts.scss';
 
+$primary:#85CEE4;
+
+$border:8px;
+
+$hover-btn-primary:rgba(255, 255, 255, 0.15);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -21,6 +27,14 @@
 body {
   font-weight: 500;
   position: relative;
+}
+
+h2{
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 100;
+  color: $primary;
+  margin-bottom: 24px;
 }
 
 @layer utilities {
@@ -59,8 +73,3 @@ $smallMobile: 640px;
   }
 }
 
-$primary:#85CEE4;
-
-$border:8px;
-
-$hover-btn-primary:rgba(255, 255, 255, 0.15);

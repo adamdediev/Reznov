@@ -1,4 +1,8 @@
 import "./homepage.scss";
+import Image from 'next/image';
+import textСircle from '../../../../public/image/text-circle.svg';
+import houseMobile from '../../../../public/image/house-mobile.svg';
+import house from '../../../../public/image/house.svg';
 
 export default function Homepage() {
   return (
@@ -15,8 +19,14 @@ export default function Homepage() {
           <button>Бесплатная консультация</button>
         </div>
         <div className="homepage__circle">
-        <img className="homepage__circle--img" src="./image/text-circle.svg" alt="" />
-        <img className="homepage__circle--img-house" src="./image/house.svg" alt="" />
+        <Image src={textСircle} className="homepage__circle--img" alt="textСircle" role="presentation" />
+        <span className="homepage__circle-white" ></span>
+        <Image src={house} className="homepage__circle--img-house" alt="house" role="presentation" />
+        <div className="relative">
+          <Image src={houseMobile} className="homepage__circle--img-house-mobile" alt="houseMobile" role="presentation" />
+          <div className="homepage__circle--img-house-mobile-circle"></div>
+        </div>
+
         </div>
       </div>
     </div>

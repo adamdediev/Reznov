@@ -1,0 +1,194 @@
+@import '../../globals.scss';
+
+.service{
+    padding: 95px 0px;
+    &__title{
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 100;
+        color: $primary;
+        margin-bottom: 24px;
+    }
+    &__content-block{
+        display: flex;
+        gap: 1.5rem;
+    }
+    &__block-item{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        position: relative;
+        width: 32%;
+        overflow: hidden;
+        &-1,&-2{
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        &-1{
+            height: 224px;
+        }
+        &-2{
+            height: 163px;
+        }
+        &-card{
+            background: #1C1C1C;
+            border-radius: 12px;
+            height: 407px;
+            position: relative;
+            color: $primary;
+
+            a{  
+                display: none;
+                font-size: 16px;
+                padding: 16px 20px;
+                border: 1px solid $primary;
+                border-radius: $border;
+                position: absolute;
+                top: 35%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                &:hover{
+                    background: $hover-btn-primary;
+                }
+            }
+            h4{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                text-transform: uppercase;
+                transform: translate(-50%, -50%);
+                z-index: 10;
+                font-size: 36px;
+                font-weight: bold;
+                color: $primary;
+                transition: all 0.9s ease-in-out;
+
+            }
+            &::before{
+                content:'';
+                position: absolute;
+                display: block;
+                width: 100%;
+                background: url('/image/new-buildings.svg') no-repeat;
+                height: 100%;
+                background-size: 395px;
+                bottom: 0; 
+                left: 50%; 
+                transform: translateX(-50%);
+                transition: all 0.6s ease-in-out, 
+              
+            }
+            &:hover{
+                &::before{
+                    width: 100%;
+                    background: url('/image/new-buildings-active.svg') no-repeat;
+                    background-size: 223px;
+                    height: 200px;
+                    width: 200px;
+                }
+                a{
+                    display: inline-block;
+                }
+                h4{
+                    top: 32px;
+                    font-size: 24px;
+                    font-weight: 100;
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+    &__card-2,&__card-3,&__card-4,&__card-5{
+        h4{
+            font-size: 2rem;
+            width: 100%;
+            text-align: center;
+        }
+    }
+     &__card-2{
+        height: 346px;
+                &::before{
+                background: url('/image/secondary-housing.svg') no-repeat;
+                width: 295px;
+                height: 324px;
+                }
+                &:hover{
+                    &::before{
+                        background: url('/image/secondary-housing-active.svg') no-repeat;
+                        height: 150px;
+                        width: 120px;         
+                }                
+            }
+        }
+     &__card-3{
+        height: 285px;
+                &::before{
+                background: url('/image/commercial.svg') no-repeat;
+                }
+                &:hover{
+                    &::before{
+                        height: 138px;
+                        width: 150px;
+                        background: url('/image/commercial-active.svg') no-repeat;
+                }
+                h4{
+                    top:40px;
+                }
+                a{
+                    padding: 12px 20px;
+                    top: 39%;
+                }                
+            }
+        }
+    &__card-4{
+        height: 224px;
+                &::before{
+                background: url('/image/apartment.svg') no-repeat;
+                }
+                &:hover{
+                    &::before{
+                        left: 30%;
+                        height: 150px;
+                        background: url('/image/apartment-active.svg') no-repeat;
+                }
+                h4{
+                    top:40px;
+                }
+                a{
+                    top: auto;
+                    left: auto;
+                    right: 0px;
+                    bottom: 20px;
+                    transform: translate(-20%, -50%);
+                }                
+                }
+
+                &:hover{}
+            }
+    &__card-5{
+        height: 220px;
+                &::before{
+                background: url('/image/mortgage.svg') no-repeat;
+                }
+                &:hover{
+                    &::before{
+                        left: 30%;
+                        height: 150px;
+                        background: url('/image/mortgage-active.svg') no-repeat;
+                }           
+                a{
+                    top: auto;
+                    left: auto;
+                    right: 0px;
+                    bottom: 20px;
+                    transform: translate(-25%, -50%);
+                }         
+                }
+                
+                
+            }
+            
+}

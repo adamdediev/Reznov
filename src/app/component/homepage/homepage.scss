@@ -35,6 +35,21 @@
         }
         }
     }
+
+    &__circle-white{
+        @include respond-to($mobile){
+            display: block;
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            right: 100px;
+            bottom: 100px;
+            background: #fff;
+            z-index: 10;
+            border-radius: 50%;
+        }
+    }
+
     &__content{
         h2{
             margin-top: 7rem;
@@ -46,6 +61,9 @@
 
             @include respond-to($pc){
                 font-size: 4rem;
+            }
+            @include respond-to($tablet){
+                margin-top: 2rem;
             }
 
             @include respond-to($mobile){
@@ -61,11 +79,17 @@
 
     &__lead-circle{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         z-index: 1;
         position: relative;
         margin-top: -2.7rem;
+        @include respond-to($tablet){
+            margin-top:0px;
+        }
+        @include respond-to($mobile){
+            flex-direction: column-reverse;
+        }
     }
     &__lead{
         color: #fff;
@@ -73,32 +97,114 @@
         font-size: 3rem;
         width: 50%;
         font-weight: 100;
+        @include respond-to($tablet){
+            font-size: 2.5rem;
+        }
+        @include respond-to($mobile){
+            width: 100%;
+            text-align: left;
+            display: flex;
+            flex-direction: column-reverse;
+        }
         button{
             text-transform: uppercase;
             color: $primary;
-            font-size: 24px;
+            font-size: 1.5rem;
             padding: 24px 50px;
             border: 1px solid $primary;
             border-radius: $border;
             margin-top: 24px;
-
+            @include respond-to($tablet){
+                font-size: 1.2rem;
+                padding: 24px 25px;
+            }
+            @include respond-to($mobile){
+                padding: 16px 0px;
+                width: 100%;
+                font-size: 1rem;
+                background: $primary;
+                color: #000;
+                font-weight: 500;
+            }
             &:hover{
                 background: $hover-btn-primary;
+            }
+        }
+        h1{
+            @include respond-to($mobile){
+                font-size: 36px;
+                margin-top: 40px;
+                position: relative;
+                &::after{
+                    content:'';
+                    background: url('/image/arrow-down.svg') no-repeat ;
+                    display: inline-block;
+                    width: 26px;
+                    height: 26px;
+                    margin-left: 16px;
+                }
+
             }
         }
     }
     &__circle{
         position: relative;
+
+        .relative{
+            left: -70px;
+            margin-top: 24px;
+        }
+
+        @include respond-to($mobile){
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            position: relative;
+            min-height: 400px;
+            justify-content: flex-end;
+        }
+
         &--img{
             background: $primary;
             border-radius: 50%;
             animation: circle-animated 50s linear infinite; 
             transform-origin: center center;
+            @include respond-to($mobile){
+                background: none;
+                position: absolute;
+                right: -25px;
+                top: 120px;
+                z-index: 10;
+                width: 300px;
+            }
         }
         &--img-house{
             position: absolute;
             top: 30%;
             right: -25%;
+            @include respond-to($mobile){
+                display: none;
+            }
+          &-mobile{
+            &-circle{
+                display: none;
+                @include respond-to($mobile){
+                    display: block;
+                    width: 269px;
+                    height: 269px;
+                    background: #669bab;
+                    border-radius: 50%;
+                }
+            }
+            display: none;
+            @include respond-to($mobile){
+                display: block;
+                position: absolute;
+                left: 50px;
+                top: -30px;
+            }
+          }
+
         }
     }
 }
