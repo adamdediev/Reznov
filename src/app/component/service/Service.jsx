@@ -2,13 +2,17 @@ import './service.scss'
 import Image  from 'next/image';
 import newBuilding from '../../../../public/image/apartment-plan.svg';
 import carCard from '../../../../public/image/car-card.svg';
+import mobileCard from '../../../../public/image/card-mobile.svg';
 
 
 export default function Service() {
   return (
     <section className='service'>
-    <h2 className='service__title'>услуги</h2>
-
+    <div className="service-mobile__image">
+    <Image className='service-moblie__build' src={newBuilding} alt='building'/>
+    <Image className='service-moblie__card' src={mobileCard} alt='car card'/>
+    </div>
+    <h2 className='service__title title-block'>услуги</h2>
     <div className="service__content-block">
     <div className="service__block-item" >
 
@@ -45,6 +49,35 @@ export default function Service() {
     </span>
     </div>
 
+    </div>
+    <div className="service-mobile__content-block">
+      <a href='#' className="service-mobile__card">
+        <h3>новостройки</h3>
+        <span className='service-mobile__card-1'></span>
+      </a>
+      <a href='#' className="service-mobile__card">
+        <h3>вторичное <br/> жилье</h3>
+        <span className='service-mobile__card-2'></span>
+      </a>
+      <a href='#' className="service-mobile__card">
+        <h3>загородная <br/> недвижимость</h3>
+        <span className='service-mobile__card-3'></span>
+      </a>
+      <a href='#' className="service-mobile__card">
+        <h3>коммерческие <br/> помещения</h3>
+        <span className='service-mobile__card-4'></span>
+      </a>
+      <a href='#' className="service-mobile__card">
+        <h3>ипотека</h3>
+        <span className='service-mobile__card-5'></span>
+      </a>
+    </div>
+    <div className="service-mobile__footer">
+      <div className="service-mobile__footer-circle-text">
+        <span></span>
+        <h3>Не знаете, с  чего начать?</h3>
+      </div>
+      <button className="service-mobile__footer-btn">проконсультируйте меня</button>
     </div>
     </section>
   )

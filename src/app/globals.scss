@@ -24,6 +24,11 @@ $hover-btn-primary:rgba(255, 255, 255, 0.15);
   }
 }
 
+html {
+  scrollbar-color: #646464 #1C1C1C;
+}
+
+
 body {
   font-weight: 500;
   position: relative;
@@ -73,3 +78,28 @@ $smallMobile: 640px;
   }
 }
 
+.title-block{
+    @include respond-to($mobile){
+      position: relative;
+      display: inline-block;
+      margin-top: 60px;
+      margin-bottom: 32px;
+      &::before, &::after{
+        content: '';
+        background: url('/image/left-corner.svg') no-repeat;
+        display: block;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: -10px;
+      }
+      &::after{
+        background: url('/image/right-corner.svg')no-repeat;
+        bottom: 0px;
+        width: 18px;
+        height: 18px;
+        right: -10px;
+        left: auto;
+      }
+    }
+}

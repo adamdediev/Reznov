@@ -1,1 +1,120 @@
 @import '../../globals.scss';
+
+
+.our-faces{
+    &__container-card{
+        display: flex;
+        gap: 25px;
+        @include respond-to($smallMobile){
+            overflow-x: auto;
+            scroll-snap-type: x mandatory; 
+            -webkit-overflow-scrolling: touch; 
+            scroll-behavior: smooth; 
+        }
+    }
+    &__management{
+        font-size: 20px;
+        font-weight: 300;
+        color: $primary;
+        margin-top: 0.5rem;
+        padding: 0px 8px;
+        font-weight: 100;
+        @include respond-to($tablet){
+            font-size: 14px;
+        }
+        @include respond-to($smallMobile){
+            font-size:16px;
+        }
+    }
+    &__comments{
+        display: inline-block;
+        margin-top: 16px;
+        font-size: 20px;
+        padding: 0px 8px;
+        font-weight: 100;
+        position:relative;
+        &::before{
+            content: '';
+            position:absolute;
+            background: url('/image/arrow-white.svg') no-repeat;
+            display:inline-block;
+            width: 16px;
+            height: 16px;
+            margin-left: -25px;
+            margin-top: 8px;
+            @include respond-to($smallMobile){
+                margin-top: 6px;
+            }
+        }
+        @include respond-to($tablet){
+            font-size: 14px;
+        }
+        @include respond-to($smallMobile){
+            font-size: 16px;
+        }
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background:#111111 ;
+        color: #fff;    
+        border-radius: 22px;
+        min-height: 300px;
+        @include respond-to($smallMobile){
+            flex: none; 
+            width: 93vw; 
+            scroll-snap-align: start;
+        }
+        @media (max-width:495px){
+            width: 87vw; 
+        }
+        &-info{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+            font-weight: 100;
+        }
+        img{
+            border-radius: 22px;
+            width: 370px;
+            height: 25vw;
+            @include respond-to($smallMobile){
+                width: 100%;
+                height: 100%;
+            }
+        }
+        h5{
+            text-transform: uppercase;
+            margin-top: 40px;
+            font-size: 24px;
+            font-weight: 600;
+            @include respond-to($tablet){
+                font-size: 16px;
+            }
+            @include respond-to($smallMobile){
+                font-size: 20px;
+            }
+      
+        }
+        &-boss{
+            background: $primary;
+            h5{
+                color: #000;
+            }
+            div{
+                color: #fff;
+            }
+            span{
+                color:#000;
+                margin-top: 46px;
+                @include respond-to($smallMobile){
+                    margin-top: 16px;
+                }
+                &::before{
+                    background: url('/image/arrow-black.svg') no-repeat;
+                }
+            }
+        }
+    }
+}

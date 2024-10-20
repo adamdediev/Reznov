@@ -10,7 +10,7 @@ export default function Homepage() {
       <div className="homepage__blue-circle-1 md:block hidden"></div>
       <div className="homepage__blue-circle-2"></div>
       <div className="homepage__content">
-        <h2>для тех, кто ищет большее</h2>
+        <h3>для тех, кто ищет большее</h3>
       </div>
 
       <div className="homepage__lead-circle">
