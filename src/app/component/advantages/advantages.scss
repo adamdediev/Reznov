@@ -1,0 +1,149 @@
+@import '../../globals.scss';
+
+.advantages{
+    .title-block{
+        @include respond-to($mobile){
+            display: none;
+        }
+    }
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            background: url('/image/shema-advantages.svg');
+            display: block;
+            width: 580px;
+            height: 551px;
+            left: 54%;
+            transform: translateX(-50%);
+            top: 25px;
+            mix-blend-mode: color-dodge;
+        }
+        @include respond-to($mobile){
+            display: none;
+        }
+    }
+    &__card{
+        margin-bottom: 2%;
+        text-align: center;
+        padding: 7% 4%;
+        border-radius: $border;
+        background: #1C1C1C;
+        width: 49%;
+        color: #fff;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h3{
+            text-transform: uppercase;
+            margin-bottom: 32px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        span{
+            font-size: 20px;
+            font-weight: 100;
+        }
+
+        &-1{
+            width: 69%;
+        }
+        &-2{
+            width: 29%;
+            padding:1%;
+        }
+    }
+}
+
+.advantages-mobile{
+    &__title{
+        display: none;
+        @include respond-to($mobile){
+            display: block;
+            text-align: center;
+            margin-top: 60px;
+        }
+    }
+    &__content{
+        display:none;
+        div{
+            margin-bottom: 2rem;
+        }
+        @include respond-to($mobile){
+            display: block;
+        }
+        p{
+            color:#A4A4A4;
+            font-size: 16px;
+            line-height: 150%;
+            font-weight: 100;
+        }
+    }
+    &__text-left{
+        h5{
+            font-size: 20px;
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 16px;
+            &::after{
+                content: '<';
+                position: absolute;
+                color:#fff;
+                display: block;
+                font-weight: 100;
+                top:-2px;
+                right: -27px;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                background:#fff;
+                display: block;
+                width: 104vh;
+                height: 1px;
+                top: 46%;
+                left: 108%;
+            }
+        }
+    }
+    &__text-right{
+        text-align: right;
+        h5{
+            font-size: 20px;
+            font-weight: 600;
+            color: $primary;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 16px;
+            &::after{
+                content: '>';
+                position: absolute;
+                color:$primary;
+                display: block;
+                font-weight: 100;
+                top:-2px;
+                left: -27px;
+            }
+            &::before{
+                content: '';
+                position: absolute;
+                background:$primary;
+                display: block;
+                width: 104vh;
+                height: 1px;
+                top: 46%;
+                right: 108%;
+            }
+        }
+        
+    }
+}

@@ -1,4 +1,3 @@
-import "./ourFaces.scss";
 import Image  from 'next/image';
 import Denis from '../../../../public/image/denis.jpg';
 import Ksenia from '../../../../public/image/Ksenia.jpg';
@@ -10,14 +9,12 @@ export default function OurFaces() {
     <section className="our-faces">
       <h2 className="title-block">мы в лицах</h2>
       <div className="our-faces__container-card">
-
         <div className="our-faces__card our-faces__card-boss">
 
         <Image src={Denis}  alt='Denis'/>  
         <div className="our-faces__card-info">
         <h5 className="our-faces__name">Денис севостьянов</h5>
         <div className="our-faces__management">руководитель агенства <br/> </div>
-
         <span className="our-faces__comments"> более 10 лет в недвижимости</span>
         </div>
 
