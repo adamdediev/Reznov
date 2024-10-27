@@ -1,0 +1,67 @@
+@import '../../globals.scss';
+
+.number{
+    position: relative;
+    margin: -20px;
+
+    @include respond-to($mobile){
+        height: 850px;
+    }
+    @include respond-to($smallMobile){
+        height: auto;
+    }
+    img{
+        margin-top: -150px;
+        @include respond-to($mobile){
+            object-fit: cover;
+            margin-top: 0px;
+            object-position: -220px;
+        }
+    }
+    &__circle-block{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        position: relative;
+        @include respond-to($tablet){
+            gap: 40px;
+        }
+        @include respond-to($mobile){
+            gap: 30px;
+        }
+        @include respond-to($smallMobile){
+            margin-right: 20px;
+            gap: 0px;
+            flex-direction: column;
+            align-content: space-evenly;
+        }
+        @media (max-width:450px) {
+            align-content: end;
+        }
+        span{
+            padding: 0px 10px;
+            gap: 8px;
+            font-size: 20px;
+            font-weight: 100;
+            text-transform: uppercase;
+            border-radius: 50%;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+  
+            @include respond-to($tablet){
+                font-size: 14px;
+            }
+            &:nth-of-type(7) {
+                @include respond-to($tablet){
+                    display: none;
+                }
+            }
+            strong{
+                font-weight: bold;
+            }
+        }
+    }
+}

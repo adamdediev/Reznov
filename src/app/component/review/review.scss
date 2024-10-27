@@ -1,0 +1,70 @@
+@import '../../globals.scss';
+
+.review{
+
+    &__block-1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__content{
+        @include respond-to($mobile){
+            display: none !important;
+        }
+        h5,p{
+            color: #fff;
+            padding: 0px 24px;
+            font-size: 16px;
+            font-weight: 100;
+            @include respond-to($tablet){
+                padding: 0px 12px;
+            }
+        }
+        h5{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 24px;
+            padding: 24px 0px;
+            font-weight: 600;
+            @include respond-to($tablet){
+                padding: 12px 0px;
+            }
+        }
+        div{
+            border-radius: $border;
+        }
+    }
+    &__content-mobile{
+        color: #fff;
+        font-weight: 100;
+        display: none;
+        @include respond-to($mobile){
+            display:block;
+        }
+        h5{
+            color: $primary;
+            font-size: 20px;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+    }
+    &__card-review{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex:none;
+        padding: 16px 20px ;
+        border: 1px solid $primary;
+        border-radius: $border;
+        scroll-snap-align: start;
+    }
+    &__card-block{
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        padding-bottom: 20px;
+    }
+}

@@ -54,6 +54,8 @@
             font-size: 12px;
             width: 200px;
             margin: 0 auto;
+            max-width: 63%;
+            margin-top: 10px;
         }
         @include respond-to($mobile){
             width: 100%;

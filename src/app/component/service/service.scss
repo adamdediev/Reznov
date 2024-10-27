@@ -90,7 +90,6 @@
             }
             &:hover{
                 &::before{
-                    width: 100%;
                     background: url('/image/new-buildings-active.svg') no-repeat;
                     background-size: 223px;
                     height: 200px;
@@ -206,6 +205,7 @@
 
 .service-mobile{
     &__image{
+        margin-top: 16px;
         display: none;
         flex-direction: column;
         align-items: center;
