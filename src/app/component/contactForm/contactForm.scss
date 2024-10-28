@@ -1,1 +1,39 @@
 @import '../../globals.scss';
+
+.contact-form{
+    &__block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #1C1C1C;
+        padding: 40px 24px;
+        border-radius: $border;
+    }
+    &__title{
+        display:flex;
+        align-items: center;
+        flex-direction:column;
+        color: white;
+        font-size: 48px;
+        line-height: 32px;
+        span{
+            font-size: 24px;
+        
+        }
+    }
+    &__formgroup{
+        display:flex;
+        align-items: center;
+        flex-direction:column;
+        &-button{
+            color: black;
+            background: white;
+            border-radius: $border;
+            text-transform: uppercase;
+            font-size: 16px;
+            padding: 16px 20px;
+            outline: none;
+            overflow: hidden;
+        }
+    }
+}
