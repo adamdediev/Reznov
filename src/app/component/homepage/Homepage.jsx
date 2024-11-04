@@ -1,12 +1,19 @@
-import "./homepage.scss";
+'use client'
 import Image from 'next/image';
 import textСircle from '../../../../public/image/text-circle.svg';
 import houseMobile from '../../../../public/image/house-mobile.svg';
 import house from '../../../../public/image/house.svg';
+import { useState } from 'react';
+import DialogWithForm from '../dialog-with-form/DialogWithForm';
 
 export default function Homepage() {
+    const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen((cur) => !cur);
+
   return (
-    <div className="homepage">
+   <>
+    <section className="homepage">
       <div className="homepage__blue-circle-1 md:block hidden"></div>
       <div className="homepage__blue-circle-2"></div>
       <div className="homepage__content">
@@ -16,7 +23,7 @@ export default function Homepage() {
       <div className="homepage__lead-circle">
         <div className="homepage__lead">
           <h1>Ваш путь к покупке недвижимости начинается здесь</h1>
-          <button>Бесплатная консультация</button>
+          <button onClick={handleOpen}>Бесплатная консультация</button>
         </div>
         <div className="homepage__circle">
         <Image src={textСircle} className="homepage__circle--img" alt="textСircle" role="presentation" />
@@ -29,6 +36,8 @@ export default function Homepage() {
 
         </div>
       </div>
-    </div>
+    </section>
+    <DialogWithForm open={open} handleOpen={handleOpen}  />
+   </>
   );
 }

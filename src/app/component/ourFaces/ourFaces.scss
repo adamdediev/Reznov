@@ -16,7 +16,7 @@
     &__management{
         font-size: 20px;
         font-weight: 300;
-        color: $primary;
+        color: $page-default-color;
         margin-top: 0.5rem;
         padding: 0px 8px;
         font-weight: 100;
@@ -69,7 +69,7 @@
         flex-direction: column;
         text-align: center;
         background:#111111 ;
-        color: #fff;    
+        color: $font-color;    
         border-radius: 22px;
         min-height: 300px;
         @include respond-to($smallMobile){
@@ -109,12 +109,12 @@
       
         }
         &-boss{
-            background: $primary;
+            background: $page-default-color;
             h5{
                 color: #000;
             }
             div{
-                color: #fff;
+                color: $font-color;
             }
             span{
                 color:#000;

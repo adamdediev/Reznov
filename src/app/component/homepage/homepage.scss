@@ -54,7 +54,7 @@
     &__content{
         h3{
             margin-top: 7rem;
-            color:#fff;
+            color:$font-color;
             text-transform: uppercase;
             position: relative;
             font-size: 4.8rem;
@@ -94,7 +94,7 @@
         }
     }
     &__lead{
-        color: #fff;
+        color: $font-color;
         text-transform: uppercase;
         font-size: 3rem;
         width: 50%;
@@ -110,10 +110,10 @@
         }
         button{
             text-transform: uppercase;
-            color: $primary;
+            color: $page-default-color;
             font-size: 1.5rem;
             padding: 24px 50px;
-            border: 1px solid $primary;
+            border: 1px solid $page-default-color;
             border-radius: $border;
             margin-top: 24px;
             @include respond-to($tablet){
@@ -124,7 +124,7 @@
                 padding: 16px 0px;
                 width: 100%;
                 font-size: 1rem;
-                background: $primary;
+                background: $page-default-color;
                 color: #000;
                 font-weight: 500;
             }
@@ -164,7 +164,7 @@
         }
 
         &--img{
-            background: $primary;
+            background: $page-default-color;
             border-radius: 50%;
             animation: circle-animated 50s linear infinite; 
             transform-origin: center center;

@@ -1,0 +1,71 @@
+@import '../../globals.scss';
+
+
+.footer{
+    color: $font-color;
+    margin-top: 90px !important;
+    border-top: 1px solid $page-default-color;
+    padding-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @include respond-to($mobile){
+    gap: 16px;
+    }
+    &__logo{
+        background: url('/image/footer-logo.svg') no-repeat;
+        width: 158px;
+        height: 62px;
+        order: 1;
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 35%;
+        order: 2;
+        @include respond-to($mobile){
+            order: 3;
+            width: 100%;
+        }
+        &-product{
+            li{
+                margin: 12px 0px;  
+            }
+        }
+        &-contact{
+            li{
+                font-size: 12px;
+                margin: 16px 0px;  
+            }
+        }
+    }
+    &__contact{
+        span{
+            font-size: 24px;
+            font-weight: 500;
+            color: $page-default-color;
+        }
+        order: 3;
+        @include respond-to($mobile){
+            order:2;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    &__box-icon{
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        margin-top: 8px;
+    }
+    &__arrow{
+        cursor:pointer;
+        order: 4;
+        @include respond-to($mobile){
+            display: none;
+        }
+    }
+}
+

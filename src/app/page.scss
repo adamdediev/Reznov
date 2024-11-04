@@ -9,7 +9,8 @@
 @import "../app/component/review/review.scss";
 @import "../app/component/contactForm/contactForm.scss";
 @import '../app/component/header/header.scss';
+@import '../app/component/footer/footer.scss';
 
 h2{
-    color:$primary;
+    color:$page-default-color;
 }

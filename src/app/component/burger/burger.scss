@@ -36,13 +36,13 @@
         
 
         span{
-            color: $primary;
+            color: $page-default-color;
             font-size: 24px;
         }
     }
     &__nav{
         border-top:1px solid rgba(133, 206, 228, 0.3);
-        color: #fff;
+        color: $font-color;
         text-align: center;
         padding-top: 20px;
         background: #000;

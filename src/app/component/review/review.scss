@@ -11,7 +11,7 @@
             display: none !important;
         }
         h5,p{
-            color: #fff;
+            color: $font-color;
             padding: 0px 24px;
             font-size: 16px;
             font-weight: 100;
@@ -34,14 +34,14 @@
         }
     }
     &__content-mobile{
-        color: #fff;
+        color: $font-color;
         font-weight: 100;
         display: none;
         @include respond-to($mobile){
             display:block;
         }
         h5{
-            color: $primary;
+            color: $page-default-color;
             font-size: 20px;
             text-transform: uppercase;
             margin-top: 10px;
@@ -54,7 +54,7 @@
         flex-direction: column;
         flex:none;
         padding: 16px 20px ;
-        border: 1px solid $primary;
+        border: 1px solid $page-default-color;
         border-radius: $border;
         scroll-snap-align: start;
     }
