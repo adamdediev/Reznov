@@ -1,8 +1,6 @@
 'use client'
 import React, { useState } from 'react'
 import Burger from './Burger';
-import  './burger.scss'
-
 export default function SlideMenu() {
 
   const [opened, setOpened] = useState(false);

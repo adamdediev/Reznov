@@ -1,4 +1,3 @@
-import './header.scss'
 import SlideMenu from '../burger/SlideMenu';
 
 export default function Header() {

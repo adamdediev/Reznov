@@ -1,4 +1,6 @@
+@import "./homepage-variable.scss";
 @import '../app/globals.scss';
+@import "../app/component/burger/burger.scss";
 @import "../app/component/ourFaces/ourFaces.scss";
 @import "../app/component/homepage/homepage.scss";
 @import "../app/component/service/service.scss";
@@ -6,3 +8,8 @@
 @import "../app/component/numbers/number.scss";
 @import "../app/component/review/review.scss";
 @import "../app/component/contactForm/contactForm.scss";
+@import '../app/component/header/header.scss';
+
+h2{
+    color:$primary;
+}

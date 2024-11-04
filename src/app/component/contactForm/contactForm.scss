@@ -1,24 +1,73 @@
 @import '../../globals.scss';
 
 .contact-form{
+    // @include respond-to($mobile){
+    //     margin-top: 60px;
+    // }
+    .title-block{
+        @include respond-to($mobile){
+            display: none;
+
+        }
+    }
     &__block{
         display: flex;
         align-items: center;
         justify-content: space-between;
         background: #1C1C1C;
         padding: 40px 24px;
-        border-radius: $border;
+        border-radius: 12px;
+        gap: 10%;
+        @include respond-to($mobile){
+            background:transparent;
+            flex-direction: column;
+            gap: 0px;
+          
+        }
     }
     &__title{
         display:flex;
         align-items: center;
         flex-direction:column;
         color: white;
-        font-size: 48px;
-        line-height: 32px;
+        font-size: 55px;
+        text-transform: uppercase;
+        line-height: 80%;
+        position: relative;
+        @include respond-to($pc){
+            font-size: 4vw;
+        }
+        @include respond-to($mobile){
+        margin-bottom: 32px;
+        line-height: 120%;
+        font-size: 38px;
+        align-items: flex-start;
+    }
+    @include respond-to($mobile){
+    font-size: 7vw;
+    }
+        p{
+            @include respond-to($mobile){
+                &::after{
+                    content:'';
+                    background: url('/image/arrow-down.svg') no-repeat ;
+                    display: inline-block;
+                    width: 26px;
+                    height: 26px;
+                    margin-left: 16px;
+                }
+            }
+        }
         span{
-            font-size: 24px;
-        
+            font-size: 27px;
+            @include respond-to($pc){
+                font-size:1.95vw;
+            }
+            @include respond-to($mobile){
+                font-size: inherit;
+                display: contents;
+                font-weight: 100;
+            }
         }
     }
     &__formgroup{
@@ -34,6 +83,15 @@
             padding: 16px 20px;
             outline: none;
             overflow: hidden;
+        }
+        label{
+            color: white;
+        }
+        input{
+            background: $grey;
+            outline: none;
+            border: 0px;
+            color: white;
         }
     }
 }
