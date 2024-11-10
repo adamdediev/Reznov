@@ -10,7 +10,24 @@
 @import "../app/component/contactForm/contactForm.scss";
 @import '../app/component/header/header.scss';
 @import '../app/component/footer/footer.scss';
+@import '../app/component/dialog-with-form/dialog.scss';
 
 h2{
     color:$page-default-color;
+}
+
+label{
+    color: white;
+}
+input{
+    background: $grey;
+    outline: none;
+    border: 0px;
+    color: white;
+}
+
+.contact-form__formgroup-button{
+    &:hover{
+        background:#E6E6E6;
+    }
 }

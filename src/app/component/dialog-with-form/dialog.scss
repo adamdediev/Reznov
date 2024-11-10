@@ -1,0 +1,13 @@
+.dialog{
+    &__close{
+        position: absolute;
+        right: 20px;
+        color: #ffff;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    &__penal{
+        background:$dark-gray;
+        border-radius: $border;
+    }
+}

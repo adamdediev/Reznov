@@ -30,8 +30,8 @@
         align-items: center;
         margin: 0 auto;
         padding:22px;
-        @include respond-to($tablet){
-            padding:32px 22px;
+        @include respond-to($mobile){
+            padding:25px 22px;
         }
         
 

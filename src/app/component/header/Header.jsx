@@ -25,8 +25,8 @@ export default function Header() {
     <div className={`${isScrolled ? 'bg-dark-gray' : ''} header__navigation`}>
     <div className="container flex justify-between">
         <div className="header__logo"></div>
-          <nav className='flex items-center gap-8'>
-            <button className='header__btn-mobile'></button>
+          <nav className='flex items-center sm:gap-8 gap-4'>
+          <a href="tel:8 800 201-78-81"> <button className='header__btn-mobile'></button></a>
             <button className='header__btn md:block hidden' onClick={handleOpen}>обратный звонок</button>
             <div className="header__phone md:block hidden"><a href="tel:8 800 201-78-81">8 800 201-78-81</a></div>
             <SlideMenu/>

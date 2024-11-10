@@ -37,11 +37,11 @@ export default function Footer() {
       <div className="footer__contact">
         <span>8 800 201-78-81</span>
         <div className="footer__box-icon">
-         <Image src={vk}  alt='vk'/>
-         <Image src={instagramm}  alt='instagramm'/>
-         <Image src={telegramm}  alt='telegramm'/>
-         <Image src={youtube}  alt='youtube'/>
-         <Image src={mapIcon}  alt='mapIcon'/>
+       <a href="https://vk.com/reznov.realty"><Image src={vk}  alt='vk'/></a>  
+       <a href="https://instagram.com/reznov.realty?igshid=NTc4MTIwNjQ2YQ=="><Image src={instagramm}  alt='instagramm'/></a>  
+       <a href="https://t.me/reznovrealty"><Image src={telegramm}  alt='telegramm'/></a> 
+       <a href="https://www.youtube.com/channel/UCv5jvTO7j5wAG3Z7alk2-8A"><Image src={youtube}  alt='youtube'/></a> 
+       <a href="https://yandex.ru/maps/-/CDSqnTOz"><Image src={mapIcon}  alt='mapIcon'/></a> 
         </div>
       </div>
       <div className="footer__arrow" onClick={scrollToTop}>

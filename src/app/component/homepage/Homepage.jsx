@@ -1,9 +1,9 @@
 'use client'
+import { useState } from 'react';
 import Image from 'next/image';
 import textСircle from '../../../../public/image/text-circle.svg';
 import houseMobile from '../../../../public/image/house-mobile.svg';
 import house from '../../../../public/image/house.svg';
-import { useState } from 'react';
 import DialogWithForm from '../dialog-with-form/DialogWithForm';
 
 export default function Homepage() {
@@ -37,7 +37,7 @@ export default function Homepage() {
         </div>
       </div>
     </section>
-    <DialogWithForm open={open} handleOpen={handleOpen}  />
+    <DialogWithForm open={open} setOpen={setOpen}  />
    </>
   );
 }

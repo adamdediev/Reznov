@@ -1,17 +1,22 @@
 'use client'
 import React, { useState } from 'react'
+import DialogWithForm from '../dialog-with-form/DialogWithForm';
 import Burger from './Burger';
 export default function SlideMenu() {
-
+  const [open, setOpen] = useState(false);
   const [opened, setOpened] = useState(false);
 
-  // Функция для переключения состояния
+  const handleOpen = () => {
+    setOpened(false);
+    setOpen(true)
+  };
   const toggleOpened = () => {
     setOpened(!opened);
   };
 
   return (
-    <div>
+    <>
+       <div>
         <Burger opened={opened} toggleOpened={toggleOpened} />
         <div className={ opened ? 'slide-menu':'slide-menu__none'}>
           <div className="slide-menu__header">
@@ -32,11 +37,14 @@ export default function SlideMenu() {
               <li>Блог</li>
               <li>Вакансии</li>
               <li>Контакты</li>
-              <button className="header__btn mt-2">связаться с нами</button>
+              <button onClick={handleOpen} className="header__btn mt-2">связаться с нами</button>
             </ul>
           </div>
         </div>
         <div onClick={toggleOpened} className={ opened ? 'slide-menu__background':'hidden'}></div>
     </div>
+    <DialogWithForm open={open} setOpen={setOpen}  />
+    </>
+
   )
 }
