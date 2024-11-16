@@ -22,7 +22,7 @@ export default function Header() {
   }, [])
 
   return (
-    <div className={`${isScrolled ? 'bg-dark-gray' : ''} header__navigation`}>
+    <div className={`${isScrolled ? 'header__background' : ''} header__navigation`}>
     <div className="container flex justify-between">
         <div className="header__logo"></div>
           <nav className='flex items-center sm:gap-8 gap-4'>

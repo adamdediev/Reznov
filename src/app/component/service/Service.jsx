@@ -1,13 +1,19 @@
-import './service.scss'
+'use client'
+import { useState } from 'react';
 import Image  from 'next/image';
 import newBuilding from '../../../../public/image/apartment-plan.svg';
 import carCard from '../../../../public/image/car-card.svg';
 import mobileCard from '../../../../public/image/card-mobile.svg';
+import DialogWithForm from '../dialog-with-form/DialogWithForm';
 
 
 export default function Service() {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => setOpen((cur) => !cur);
   return (
-    <section className='service'>
+    <>
+       <section className='service'>
     <div className="service-mobile__image">
     <Image className='service-moblie__build' src={newBuilding} alt='building'/>
     <Image className='service-moblie__card' src={mobileCard} alt='car card'/>
@@ -26,7 +32,7 @@ export default function Service() {
     <div className="service__block-item">
     <span className='service__block-item-card service__card-2'>
     <h4>вторичное жилье</h4>
-    <a href="">Перейти</a>
+    <a href="/secondary">Перейти</a>
     </span> 
 
     <span className='service__block-item-card service__card-3'>
@@ -77,8 +83,10 @@ export default function Service() {
         <span></span>
         <h3>Не знаете, с  чего начать?</h3>
       </div>
-      <button className="service-mobile__footer-btn">проконсультируйте меня</button>
+      <button onClick={handleOpen} className="service-mobile__footer-btn">проконсультируйте меня</button>
     </div>
     </section>
+    <DialogWithForm open={open} setOpen={setOpen}  />
+    </>
   )
 }

@@ -1,6 +1,19 @@
-@import "./homepage-variable.scss";
+$page-default-color:#85CEE4;
+$primary:#85CEE4;
+$font-color:#ffff;
+$grey:#343434;
+$border:8px;
+$hover-btn-primary:rgba(255, 255, 255, 0.15);
+$dark-gray: #1C1C1C;
+$header-background: rgba(255, 255, 255, 0.1);
+$header-background-movie:$grey;
+$header-phone:#fff;
+$header-background-btn-mobile:#fff;
+$header-background-burger:#fff;
+$header-color-filter-icon-filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7486%) hue-rotate(6deg) brightness(91%) contrast(104%) ;
+
 @import '../app/globals.scss';
-@import "../app/component/burger/burger.scss";
+@import '../app/component/burger/burger.scss';
 @import "../app/component/ourFaces/ourFaces.scss";
 @import "../app/component/homepage/homepage.scss";
 @import "../app/component/service/service.scss";
@@ -11,6 +24,10 @@
 @import '../app/component/header/header.scss';
 @import '../app/component/footer/footer.scss';
 @import '../app/component/dialog-with-form/dialog.scss';
+
+body{
+    background-color:#000;
+}
 
 h2{
     color:$page-default-color;

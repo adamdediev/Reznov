@@ -1,4 +1,5 @@
 @import '../../globals.scss';
+@import '../burger/burger.scss';
 
 .header{
     &__navigation{
@@ -7,8 +8,14 @@
         top: 0px;
         left: 0px;
         z-index: 10000000;
-        background: rgba(255, 255, 255, 0.1);
+        background: $header-background;
         transition: all 0.5s ease-out;
+    }
+    &__background{
+        background:$header-background-movie;
+    }
+    &__burger{
+        background-color:  $header-background-burger !important; 
     }
     &__logo{
         width: 158px;
@@ -28,13 +35,11 @@
         transition:ease 0.4s all;
         &:hover{
             background: #E6E6E6;
-           
-
         }
     }
 
     &__btn-mobile{
-        background: #fff;
+        background:$header-background-btn-mobile;
         border-radius:  $border;
         width: 50px;
         height: 40px;
@@ -48,6 +53,7 @@
             height: 21px;
             position: absolute;
             top:55%;
+            filter: $header-color-filter-icon-filter;
             left: 50%;
             transform: translate(-50%,-50%);
         }
@@ -57,7 +63,7 @@
     }
 
     &__phone{
-        color: #fff;
+        color: $header-phone;
         font-size: 20px;
     }
 }

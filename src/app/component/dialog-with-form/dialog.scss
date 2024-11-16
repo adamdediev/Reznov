@@ -9,5 +9,8 @@
     &__penal{
         background:$dark-gray;
         border-radius: $border;
+        button{
+            width: 100%;
+        }
     }
 }

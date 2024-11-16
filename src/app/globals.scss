@@ -27,6 +27,8 @@ html {
 body {
   font-weight: 500;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 h2{
