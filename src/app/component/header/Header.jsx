@@ -22,9 +22,9 @@ export default function Header() {
   }, [])
 
   return (
-    <div className={`${isScrolled ? 'header__background' : ''} header__navigation`}>
+    <header className={`${isScrolled ? 'header__background' : ''} header__navigation`}>
     <div className="container flex justify-between">
-        <div className="header__logo"></div>
+        <a href="/"><div className="header__logo"></div></a>
           <nav className='flex items-center sm:gap-8 gap-4'>
           <a href="tel:8 800 201-78-81"> <button className='header__btn-mobile'></button></a>
             <button className='header__btn md:block hidden' onClick={handleOpen}>обратный звонок</button>
@@ -33,7 +33,7 @@ export default function Header() {
           </nav>
         </div>
         <DialogWithForm open={open} setOpen={setOpen}  />
-    </div>
+    </header>
       
   )
 }

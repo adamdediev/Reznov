@@ -1,6 +1,5 @@
 @import '../../globals.scss';
 
-
 .footer{
     color: $font-color;
     margin-top: 90px !important;
@@ -14,7 +13,7 @@
     gap: 16px;
     }
     &__logo{
-        background: url('/image/footer-logo.svg') no-repeat;
+        background: $footer-logo no-repeat;
         width: 158px;
         height: 62px;
         order: 1;
@@ -29,6 +28,7 @@
         align-items: center;
         width: 35%;
         order: 2;
+        color:$footer-nav-link ;
         @include respond-to($mobile){
             order: 3;
             width: 100%;
@@ -37,7 +37,7 @@
             li{
                 margin: 12px 0px;  
                 &:hover{
-                    color: $primary;
+                    color: $footer-nav-link-hover;
                 }
             }
         }
@@ -46,13 +46,15 @@
                 font-size: 12px;
                 margin: 16px 0px;  
                 &:hover{
-                    color: $primary;
+                    color: $footer-nav-link-hover;
                 }
             }
         }
     }
     &__contact{
-        gap:8px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
         span{
             font-size: 24px;
             font-weight: 500;
@@ -68,12 +70,15 @@
     &__box-icon{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         gap: 8px;
+        filter:$footer-color-filter-icon-filter;
        
     }
     &__arrow{
         cursor:pointer;
         order: 4;
+        filter: $footer-color-arrow;
         @include respond-to($mobile){
             display: none;
         }

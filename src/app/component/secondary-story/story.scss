@@ -1,0 +1,15 @@
+
+
+.story{
+    background: #202020;
+
+    .title-block{
+        color: $font-color;
+    }
+    &__card-swiper{
+        max-width: 350px;
+        width: 100%;
+        max-height: 300px;
+    }
+}
+

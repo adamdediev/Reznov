@@ -52,7 +52,7 @@ main{
   width: 100%;
   max-width: 1190px;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 0px 16px;
 }
 
 
@@ -74,33 +74,3 @@ $smallMobile: 640px;
   }
 }
 
-.title-block{
-  margin-top: 180px;
-  @include respond-to($tablet){
-    margin-top: 100px;
-
-  }
-    @include respond-to($mobile){
-      position: relative;
-      display: inline-block;
-      margin-top: 60px;
-      margin-bottom: 32px;
-      &::before, &::after{
-        content: '';
-        background: url('/image/left-corner.svg') no-repeat;
-        display: block;
-        width: 16px;
-        height: 16px;
-        position: absolute;
-        left: -10px;
-      }
-      &::after{
-        background: url('/image/right-corner.svg')no-repeat;
-        bottom: 0px;
-        width: 18px;
-        height: 18px;
-        right: -10px;
-        left: auto;
-      }
-    }
-}

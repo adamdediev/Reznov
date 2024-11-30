@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer__arrow" onClick={scrollToTop}>
-        <Image src={arrow}  alt='Ksenia'/>
+        <Image src={arrow}  alt='arrow'/>
       </div>
      </div>
     </footer>
