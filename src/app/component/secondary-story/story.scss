@@ -2,14 +2,146 @@
 
 .story{
     background: #202020;
-
+    color: white;
+    font-weight: 300;
+    .swiper-horizontal{
+        border-radius: 12px;
+        @include respond-to($tablet){
+           margin-bottom: 32px;
+        }
+    }
     .title-block{
         color: $font-color;
     }
-    &__card-swiper{
-        max-width: 350px;
+    &__swiper-pagination{
+        height: 35px;
+        width: 30px;
+        border-radius: 0px;
+
+    }
+    &__card{
+        display: flex;
+        flex-direction:column;
+        gap:20px;
+        @include respond-to($tablet){
+            display: none;
+        }
+        &-mobile{
+            display: none;
+            flex-direction:column;
+            gap:20px;
+            @include respond-to($tablet){
+                display: flex;
+            }
+            .story__content{
+                width: 100%;
+                border: 0px;
+                flex-direction: column;
+                
+            }
+        }
+            &-swiper{
+            max-width: 350px;
+            width: 100%;
+            @include respond-to($tablet){
+                max-width: 400px;
+            }
+                img{
+                    border-radius:12px;
+                    width: 100%;
+                }
+            }
+            &-item{
+                display: flex;
+                @include respond-to($tablet){
+                    margin-bottom: 5rem;
+                }
+                @include respond-to($mobile){
+                    align-items:center;
+                    flex-direction:column;
+                }
+            }
+    }   
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         width: 100%;
-        max-height: 300px;
+        border-radius: 12px;
+        border: 2px solid rgba(133, 206, 228, 0.50);
+        border-left: none;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        margin-left: -10px;
+        padding-left: 20px;
+        &-text{
+            max-width: 430px;
+            width: 100%;
+            @include respond-to($mobile){
+                max-width: 400px;
+            }
+            ul{
+                li{
+                    position: relative;
+                    padding-left: 40px;
+                    margin-bottom: 20px;
+                    &::before{
+                        content: "✓";
+                        font-size: 18px;
+                        position: absolute;
+                        left: 3px;
+                        top: 0px;
+                        z-index:10;
+                    }
+                       &::after{
+                        content: "";
+                        position: absolute;
+                        background: $primary;
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        left:0px;
+                        top:7px;
+                    }
+
+                }
+            }
+        }
+        &-title{
+            margin-bottom: 20px;
+        }
+        &-video{
+            margin: 0px 10px;
+            text-align: center;
+            video{
+            width: 15vw;
+            height: 15vw;
+            border-radius: 50%;
+            object-fit: cover;
+            @include respond-to($mobile){
+                width: 200px;
+                height: 200px;
+            }
+            }
+        }
+    }
+    &__swiper-pagination{
+        background:none;
+    }
+    .swiper-pagination-bullet-active{
+        background: #424242 !important;
     }
 }
 
+.swiper{
+    width: 100%;
+    &-pagination{
+        bottom: -20px;
+        span{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;   
+        }
+    }
+}

@@ -5,8 +5,7 @@ $grey:#343434;
 $border:8px;
 $hover-btn-primary:rgba(255, 255, 255, 0.15);
 $dark-gray: #1C1C1C;
-$filter-corver: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
-
+$filter-corver: brightness(0) saturate(100%) invert(83%) sepia(9%) saturate(1649%) hue-rotate(157deg) brightness(93%) contrast(91%);
 // header
 $header-background: rgba(255, 255, 255, 0.1);
 $header-background-movie:rgba(255, 255, 255, 0.2);
@@ -32,6 +31,12 @@ $footer-color-arrow: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(
 @import '../component/secondary-homepage/homepage.scss';
 @import '../component/secondary-story/story.scss';
 
+
+:root{
+  --swiper-theme-color:#85CEE4;
+  --swiper-pagination-bullet-horizontal-gap:8px;
+}
+
 body{
   background: $primary;
 }
@@ -44,8 +49,9 @@ body{
     }
       @include respond-to($mobile){
         position: relative;
+        padding-top: 45px;
         display: inline-block;
-        margin-top: 60px;
+        margin-top: 0px;
         margin-bottom: 32px;
         &::before, &::after{
           content: '';
@@ -66,5 +72,8 @@ body{
           right: -10px;
           left: auto;
         }
+      }
+      @include respond-to($smallMobile){
+          font-size:24px;
       }
   }
