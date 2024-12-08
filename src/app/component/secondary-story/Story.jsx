@@ -1,7 +1,6 @@
 import image1 from '../../../../public/image/carousel-1.svg';
 import image2 from '../../../../public/image/carousel-2.svg';
 import image3 from '../../../../public/image/carousel-3.svg';
-// import video from '../../../../public/video/video-1.mp4';
 import StoryCard from '../story-card/StoryCard';
 import StoryCardMobile from '../story-card/StoryCardMobile';
 
@@ -52,9 +51,9 @@ export default function Story() {
             images={story.images}
           />
         ))}
+        <div className="text-white text-left">Больше отзывов на <a className="border-b border-white" href="https://yandex.ru/maps/-/CDSqnTOz">Яндекс картах</a></div>
         </div>
         <div className="story__card-mobile">
-         
           <StoryCardMobile slides={stories} />
         </div>
       </div>

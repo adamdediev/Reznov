@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.scss";
+import Head from 'next/head';
 import Header from './component/header/Header';
 import Footer from './component/footer/Footer';
 
@@ -24,6 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+      <meta property="og:image" content="public/images/secondary-homepage-mobile.jpg" />
+      </Head>
+
       <body className="overflow-x-hidden">
         <Header/>
         <main>

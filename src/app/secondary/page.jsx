@@ -1,13 +1,14 @@
-import Carousel from '../component/carousel/Carousel';
+import './page.scss'
 import Homepage from '../component/secondary-homepage/Homepage'
 import Story from '../component/secondary-story/Story';
-import './page.scss'
+import Numbers from '../component/secondary-numbers/Numbers';
 
 export default function page() {
   return (
     <>
     <Homepage />
     <Story />
+    <Numbers />
     </>
   )
 }

@@ -25,9 +25,9 @@ export default function SlideMenu() {
           </div>
           <div className='slide-menu__nav'>
             <ul>
-              <li>главная</li>
+              <a href="/"><li>главная</li></a>
               <li>новостройки</li>
-              <li>вторичное жилье</li>
+              <a href="/secondary"><li>вторичное жилье</li></a>
               <li>коммерческая</li>
               <li>загородная</li>
               <li>ипотека</li>
