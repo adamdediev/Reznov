@@ -55,6 +55,9 @@ main{
   padding: 0px 16px;
 }
 
+a{
+  cursor: pointer;
+}
 
 $pc: 1280px;
 $tablet: 1024px;
@@ -74,3 +77,18 @@ $smallMobile: 640px;
   }
 }
 
+// Миксин для адаптивного шрифта
+@mixin fluid-font-size($min-font, $max-font, $min-width: 320px, $max-width: 1200px) {
+  font-size: $min-font;
+
+  @media (min-width: $min-width) {
+    font-size: calc(
+      #{$min-font} + (#{$max-font} - #{$min-font}) * 
+      ((100vw - #{$min-width}) / (#{$max-width} - #{$min-width}))
+    );
+  }
+
+  @media (min-width: $max-width) {
+    font-size: $max-font;
+  }
+}

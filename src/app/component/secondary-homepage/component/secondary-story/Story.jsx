@@ -1,8 +1,8 @@
-import image1 from '../../../../public/image/carousel-1.svg';
-import image2 from '../../../../public/image/carousel-2.svg';
-import image3 from '../../../../public/image/carousel-3.svg';
-import StoryCard from '../story-card/StoryCard';
-import StoryCardMobile from '../story-card/StoryCardMobile';
+import image1 from '/public/image/carousel-1.svg';
+import image2 from '/public/image/carousel-2.svg';
+import image3 from '/public/image/carousel-3.svg';
+import StoryCard from '../../../story-card/StoryCard';
+import StoryCardMobile from '../../../story-card/StoryCardMobile';
 
 
 export default function Story() {

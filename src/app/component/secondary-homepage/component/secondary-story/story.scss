@@ -12,6 +12,9 @@
     }
     .title-block{
         color: $font-color;
+        &:after,&:before{
+            filter:brightness(0) saturate(100%) invert(83%) sepia(9%) saturate(1649%) hue-rotate(157deg) brightness(93%) contrast(91%);
+        }
     }
     &__swiper-pagination{
         height: 35px;
@@ -127,8 +130,8 @@
             margin: 0px 10px;
             text-align: center;
             video{
-            width: 15vw;
-            height: 15vw;
+            width: 10vw;
+            height: 10vw;
             border-radius: 50%;
             object-fit: cover;
             @include respond-to($mobile){

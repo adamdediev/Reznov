@@ -17,6 +17,9 @@
         width: 158px;
         height: 62px;
         order: 1;
+        @include respond-to($mobile){
+        background: $footer-logo-mobile no-repeat;
+        }
         @include respond-to($smallMobile){
         width: 90px;
         background-size:80px 40px ;

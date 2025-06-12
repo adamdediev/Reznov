@@ -51,6 +51,10 @@ section{
             @include respond-to($mobile){
                 display: none;
             }
+            &:hover{
+            color: #fff;
+            background: #000;
+        }
             &::after{
                 content:'';
                 background: url('/image/homepage-arrow.svg') no-repeat;

@@ -22,7 +22,7 @@
         height: 62px;
         background: $header-logo no-repeat;
         @include respond-to($mobile){
-            background: url('/image/logohomepage-mobile.svg') no-repeat;
+            background: $header-logo-mobile no-repeat;
             margin-top: 20px;
             height: 46px;
         }    }

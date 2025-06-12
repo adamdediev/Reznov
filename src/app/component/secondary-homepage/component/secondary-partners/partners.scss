@@ -1,0 +1,34 @@
+.partners{
+    background: #777;
+    padding-bottom: 90px;
+    @include respond-to($mobile){
+    padding-bottom: 50px;
+    }
+    .title-block{
+        color: $font-color;
+        &:after,&:before{
+            filter:brightness(0) saturate(100%) invert(83%) sepia(9%) saturate(1649%) hue-rotate(157deg) brightness(93%) contrast(91%);
+        }
+    }
+    &__block{
+        &-1,&-2{
+            display:flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.20);
+            padding: 50px 0px;
+            gap: 16px;
+            @include respond-to($tablet){
+                flex-wrap: wrap;
+            }
+            @include respond-to($smallMobile){
+                justify-content:flex-start;
+            }
+        }
+    }
+    &__text{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-end;
+    padding:16px 0px;
+    }
+}
