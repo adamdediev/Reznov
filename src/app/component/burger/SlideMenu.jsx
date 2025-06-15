@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import DialogWithForm from '../dialog-with-form/DialogWithForm';
 import Burger from './Burger';
+import Link from "next/link";
 export default function SlideMenu() {
   const [open, setOpen] = useState(false);
   const [opened, setOpened] = useState(false);
@@ -25,18 +26,17 @@ export default function SlideMenu() {
           </div>
           <div className='slide-menu__nav'>
             <ul>
-              <a href="/"><li>главная</li></a>
-              <li>новостройки</li>
-              <a href="/secondary"><li>вторичное жилье</li></a>
-              <li>коммерческая</li>
-              <li>загородная</li>
-              <li>ипотека</li>
+              <Link href="/"><li>главная</li></Link>
+              <Link href="/new-building"><li>новостройки</li></Link>
+              <Link href="/secondary"><li>вторичное жилье</li></Link>
+              <Link href="/commerce"><li>коммерческая</li></Link>
+              <Link href="/commerce"><li>загородная</li></Link>
+
             </ul>
             <ul className='pt-12'>
-              <li>о нас</li>
-              <li>Блог</li>
-              <li>Вакансии</li>
-              <li>Контакты</li>
+              <li><a href='https://reznov-group.ru/about_us'>о нас</a></li>
+              <li><a href='https://reznov-group.ru/career'>Вакансии</a></li>
+              <li><a href='https://reznov-group.ru/contacts'>Контакты</a></li>
               <button onClick={handleOpen} className="header__btn mt-2">связаться с нами</button>
             </ul>
           </div>

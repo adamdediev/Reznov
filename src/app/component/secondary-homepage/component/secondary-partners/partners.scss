@@ -21,7 +21,7 @@
                 flex-wrap: wrap;
             }
             @include respond-to($smallMobile){
-                justify-content:flex-start;
+                justify-content:center;
             }
         }
     }

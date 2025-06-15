@@ -15,6 +15,8 @@ $header-background-btn-mobile:#fff;
 $header-background-burger:#fff;
 $header-color-filter-icon-filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7486%) hue-rotate(6deg) brightness(91%) contrast(104%) ;
 $header-menu-background-burger:#000;
+$header-background-btn:#fff;
+$header-background-btn-border:#fff;
 $header-logo:url('/image/logo-dark.svg');
 $header-logo-mobile:url('/image/logomobile-primary.svg');
 
@@ -26,7 +28,14 @@ $footer-nav-link:#FFFFFF;
 $footer-nav-link-hover:$primary;
 $footer-color-arrow: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(357deg) brightness(103%) contrast(101%);
 
+// contact form
+$contact-form-background:#1C1C1C;
+$contact-form-title:  #85CEE4;
+$contact-form-background-input: #343434;
+$contact-form-title-mobile:#fff;
+$contact-filter-arrow:  brightness(0) saturate(100%) invert(80%) sepia(82%) saturate(1278%) hue-rotate(166deg) brightness(98%) contrast(82%);
 
+$contact-label:#fff;
 @import '../app/globals.scss';
 @import '../app/component/burger/burger.scss';
 @import "../app/component/ourFaces/ourFaces.scss";
@@ -51,12 +60,7 @@ h2{
 label{
     color: white;
 }
-input{
-    background: $grey;
-    outline: none;
-    border: 0px;
-    color: white;
-}
+
 
 .contact-form__formgroup-button{
     &:hover{

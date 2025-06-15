@@ -1,0 +1,48 @@
+.comment{
+  color: #000;
+  padding: 80px 16px;
+  background: #000;
+  position: relative;
+  &__content{
+    background: $primary;
+    border-radius: 12px;
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+
+
+    &-block{
+      padding: 0px 85px;
+      font-size: 20px;
+      font-weight: 400;
+      @include respond-to($mobile){
+        padding: 0px 24px;
+        font-size: 16px;
+      }
+
+    }
+  }
+  &__Image{
+    &-1{
+      margin-left: 20px;
+      transform: translateY(-10px);
+    }
+    &-2{
+      margin-left: auto;
+      transform: translateY(10px);
+    }
+  }
+  &__avtor{
+    text-align: end;
+    max-width: 760px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    @include respond-to($mobile){
+      font-size: 16px;
+    }
+  }
+}

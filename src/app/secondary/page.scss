@@ -14,6 +14,8 @@ $header-phone:#000;
 $header-background-burger:#000;
 $header-color-filter-icon-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(179deg) brightness(107%) contrast(102%);
 $header-menu-background-burger:#000;
+$header-background-btn:#fff;
+$header-background-btn-border:#fff;
 $header-logo:url('/image/logo-dark.svg');
 $header-logo-mobile:url('/image/logo-white.svg');
 
@@ -25,6 +27,13 @@ $footer-nav-link:#000;
 $footer-nav-link-hover:#fff;
 $footer-color-arrow: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
 
+// contact form
+$contact-form-background:rgba(0, 0, 0, 0.25);
+$contact-form-title: #000;
+$contact-form-background-input: rgba(0, 0, 0, 0.25);
+$contact-form-title-mobile:#000;
+$contact-filter-arrow:  brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(179deg) brightness(107%) contrast(102%);;
+$contact-label:#fff;
 @import '../globals.scss';
 @import '../component/header/header.scss';
 @import '../component/footer/footer.scss';
@@ -34,6 +43,7 @@ $footer-color-arrow: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(
 @import '../component/secondary-homepage/component/secondary-numbers/numbers.scss';
 @import '../component/secondary-homepage/component/secondary-steps/steps.scss';
 @import '../component/secondary-homepage/component/secondary-partners/partners.scss';
+@import "../component/contactForm/contactForm.scss";
 
 
 

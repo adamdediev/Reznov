@@ -4,7 +4,7 @@ export default function ContactForm() {
   
 
   return (
-    <section className="contact-form">
+    <section className="contact-form container">
         <h2 className="title-block">свяжитесь с нами</h2>
         <div className="contact-form__block">
           <div className="contact-form__title md:w-1/2 w-full">
@@ -12,7 +12,6 @@ export default function ContactForm() {
           <p>профессионалам</p>
           </div>
           <div className="contact-form__formgroup md:w-1/2 w-full">
-
             <Form/>
           </div>
         </div>

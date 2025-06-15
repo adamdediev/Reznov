@@ -3,7 +3,7 @@ import InputMask from 'react-input-mask-next'
 import { useState } from 'react';
 
 export default function Form() {
-    const [name, setName] = useState('')
+  const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
 
   const handleNameChange = (e) => {
@@ -24,35 +24,35 @@ export default function Form() {
     console.log("Телефон:", phone)
   }
 
-  
   return (
-    <form onSubmit={handleSubmit} className="w-full">
-    <div className="mb-4">
-      <label htmlFor="name" className="block font-semibold mb-2">
-      ВАШЕ ИМЯ
-      </label>
-      <input
-        type="text"
-        id="name"
-        value={name}
-        onChange={handleNameChange}
-        className="w-full px-4 py-2 border rounded-md focus:outline-none "
-      />
-    </div>
-    <div className="mb-6">
-      <label htmlFor="phone" className="block font-semibold mb-2">
-      НОМЕР ТЕЛЕФОНА
-      </label>
-      <InputMask
-        mask="+7 (999) 999-99-99"
-        value={phone}
-        onChange={handlePhoneChange}
-        placeholder="+7 (___) ___-__-__"
-        className="w-full px-4 py-2 border rounded-md focus:outline-none"
-      />
-    </div>
-    <button type='submit'  className="contact-form__formgroup-button" >свяжитесь со мной</button>
-
-  </form>
+    <form onSubmit={handleSubmit} className="form">
+      <div className="form-group">
+        <label htmlFor="name" className="form-label">
+          ВАШЕ ИМЯ
+        </label>
+        <input
+          type="text"
+          id="name"
+          value={name}
+          onChange={handleNameChange}
+          className="form-input"
+        />
+      </div>
+      <div className="form-group last-group">
+        <label htmlFor="phone" className="form-label">
+          НОМЕР ТЕЛЕФОНА
+        </label>
+        <InputMask
+          mask="+7 (999) 999-99-99"
+          value={phone}
+          onChange={handlePhoneChange}
+          placeholder="+7 (___) ___-__-__"
+          className="form-input"
+        />
+      </div>
+      <button type="submit" className="form-button">
+        свяжитесь со мной
+      </button>
+    </form>
   )
 }

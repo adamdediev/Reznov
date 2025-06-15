@@ -15,7 +15,6 @@ export const metadata: Metadata = {
     apple: '/favicon/apple-touch-icon.png',
     shortcut: '/favicon/favicon.ico',
   },
-  // manifest: '/favicon/site.webmanifest',
 };
 
 export default function RootLayout({
@@ -31,10 +30,10 @@ export default function RootLayout({
 
       <body className="overflow-x-hidden">
         <Header/>
-        <main>
-        {children}
-        </main>  
-        <Footer/>      
+
+          {children}
+
+        <Footer/>
         </body>
     </html>
   );

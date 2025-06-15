@@ -28,10 +28,10 @@
         }    }
     &__btn{
         text-transform:uppercase;
-        background: #fff;
+        background: $header-background-btn;
         border-radius:  $border;
         padding: 10px 16px;
-        border: 1px solid $font-color;
+        border: 1px solid $header-background-btn-border;
         transition:ease 0.4s all;
         &:hover{
             background: #E6E6E6;
