@@ -2,6 +2,7 @@ $page-default-color:#85CEE4;
 $primary:#85CEE4;
 $font-color:#ffff;
 $grey:#343434;
+$body-color:#000;
 $border:8px;
 $hover-btn-primary:rgba(255, 255, 255, 0.15);
 $dark-gray: #1C1C1C;
@@ -34,28 +35,22 @@ $contact-form-title:  #85CEE4;
 $contact-form-background-input: #343434;
 $contact-form-title-mobile:#fff;
 $contact-filter-arrow:  brightness(0) saturate(100%) invert(80%) sepia(82%) saturate(1278%) hue-rotate(166deg) brightness(98%) contrast(82%);
-
 $contact-label:#fff;
-@import '../app/globals.scss';
-@import '../app/component/burger/burger.scss';
+
+$contact-form-phone-background: url("/image/cooperation-form.svg") no-repeat;
+$contact-form-phone-title-color: #fff;
+$contact-form-phone-input-color: #000;
+$contact-form-phone-btn-color: #000;
+$contact-form-phone-btn-background: #fff;
+
+@import "./style.scss";
 @import "../app/component/ourFaces/ourFaces.scss";
 @import "../app/component/homepage/homepage.scss";
 @import "../app/component/service/service.scss";
 @import "../app/component/advantages/advantages.scss";
 @import "../app/component/numbers/number.scss";
 @import "../app/component/review/review.scss";
-@import "../app/component/contactForm/contactForm.scss";
-@import '../app/component/header/header.scss';
-@import '../app/component/footer/footer.scss';
-@import '../app/component/dialog-with-form/dialog.scss';
 
-body{
-    background-color:#000;
-}
-
-h2{
-    color:$page-default-color;
-}
 
 label{
     color: white;

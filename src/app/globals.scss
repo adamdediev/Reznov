@@ -1,5 +1,5 @@
 @import './css/fonts.scss';
-
+$body-color: #fff !default;
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -25,16 +25,18 @@ html {
 
 
 body {
-  font-weight: 500;
+  font-weight: 500 ;
   position: relative;
   display: flex;
   flex-direction: column;
+  font-family: "PF Bague Sans Pro";
+  background: $body-color !important;
 }
 
 h2{
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 100;
+  text-transform: uppercase ;
+  font-size: 2rem ;
+  font-weight: 100 ;
   margin-bottom: 24px;
 }
 
@@ -63,6 +65,7 @@ $pc: 1280px;
 $tablet: 1024px;
 $mobile: 768px;
 $smallMobile: 640px;
+$smallMobileSm: 450px;
 
 
 @mixin respond-to($breakpoint) {
@@ -74,6 +77,8 @@ $smallMobile: 640px;
     @media (max-width: $tablet) { @content; }
   } @else if $breakpoint == $pc {
     @media (max-width: $pc) { @content; }
+  } @else if $breakpoint == $smallMobileSm {
+    @media (max-width: $smallMobileSm) { @content; }
   }
 }
 
@@ -92,3 +97,5 @@ $smallMobile: 640px;
     font-size: $max-font;
   }
 }
+
+

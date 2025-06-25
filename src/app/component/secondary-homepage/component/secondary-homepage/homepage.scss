@@ -1,12 +1,8 @@
-@import '../../globals.scss';
 
-section{
-    background: $primary;
-
-}
 
 .homepage-secondary{
     display: flex;
+    background: $primary;
     justify-content: space-between;
     align-items: center;
     font-weight: 100;

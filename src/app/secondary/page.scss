@@ -1,6 +1,7 @@
 $page-default-color:#fff;
 $primary:#85CEE4;
 $font-color:#ffff;
+$body-color:#85CEE4;
 $grey:#343434;
 $border:8px;
 $hover-btn-primary:rgba(255, 255, 255, 0.15);
@@ -34,63 +35,18 @@ $contact-form-background-input: rgba(0, 0, 0, 0.25);
 $contact-form-title-mobile:#000;
 $contact-filter-arrow:  brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(179deg) brightness(107%) contrast(102%);;
 $contact-label:#fff;
-@import '../globals.scss';
-@import '../component/header/header.scss';
-@import '../component/footer/footer.scss';
-@import '../component/dialog-with-form/dialog.scss';
-@import '../component/secondary-homepage/homepage.scss';
+
+
+$contact-form-phone-background: url("/image/cooperation-form.svg") no-repeat;
+$contact-form-phone-title-color: #fff;
+$contact-form-phone-input-color: #000;
+$contact-form-phone-btn-color: #000;
+$contact-form-phone-btn-background: #fff;
+
+@import "../style.scss";
+@import '../component/secondary-homepage/component/secondary-homepage/homepage.scss';
 @import '../component/secondary-homepage/component/secondary-story/story.scss';
 @import '../component/secondary-homepage/component/secondary-numbers/numbers.scss';
 @import '../component/secondary-homepage/component/secondary-steps/steps.scss';
 @import '../component/secondary-homepage/component/secondary-partners/partners.scss';
-@import "../component/contactForm/contactForm.scss";
 
-
-
-:root{
-  --swiper-theme-color:#85CEE4;
-  --swiper-pagination-bullet-horizontal-gap:8px;
-}
-
-body{
-  background: $primary;
-  font-family: "PF Bague Sans Pro";
-}
-
-.title-block{
-    padding-top: 90px;
-    font-weight: 300;
-    @include respond-to($tablet){
-      margin-top: 100px;
-  
-    }
-      @include respond-to($mobile){
-        position: relative;
-        padding-top: 45px;
-        display: inline-block;
-        margin-top: 0px;
-        margin-bottom: 32px;
-        &::before, &::after{
-          content: '';
-          filter: $filter-corver;
-          background: url('/image/left-corner.svg') no-repeat;
-          display: block;
-          width: 16px;
-          height: 16px;
-          position: absolute;
-          left: -10px;
-        }
-        &::after{
-          background: url('/image/right-corner.svg')no-repeat;
-          bottom: 0px;
-          filter: $filter-corver;
-          width: 18px;
-          height: 18px;
-          right: -10px;
-          left: auto;
-        }
-      }
-      @include respond-to($smallMobile){
-          font-size:24px;
-      }
-  }

@@ -1,9 +1,13 @@
 .suggest{
   position: relative;
-  padding: 90px 16px 180px 16px ;
+  padding: 90px 16px 0px 16px ;
   background: #000;
   @include respond-to($mobile){
-    padding: 60px 16px 150px 16px ;
+    padding: 60px 16px 0px 16px ;
+  }
+  .contact-form-phone__form{
+    margin-bottom: -108px;
+    margin-top: 50px;
   }
   &__title{
     font-size: 32px;
@@ -18,7 +22,6 @@
   }
   &__container{
     display: flex;
-    max-height: 520px;
     height: 100%;
     @include respond-to($mobile){
       flex-direction: column;
@@ -89,7 +92,6 @@
       @include respond-to($mobile){
         padding: 50px 0px ;
         &:hover{
-          background: #000;
           font-size: 20px;
         }
       }

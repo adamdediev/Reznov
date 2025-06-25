@@ -1,6 +1,7 @@
 $primary:#85CEE4;
 $page-default-color:#000;
 $font-color:#ffff;
+$body-color:#fff;
 $grey:#343434;
 $border:8px;
 $hover-btn-primary:rgba(255, 255, 255, 0.15);
@@ -33,61 +34,23 @@ $contact-form-title: #000;
 $contact-form-background-input: rgba(0, 0, 0, 0.25);
 $contact-form-title-mobile:#000;
 $contact-filter-arrow:  brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7480%) hue-rotate(279deg) brightness(89%) contrast(95%);
-
 $contact-label:#000;
-@import '../globals.scss';
-@import '../component/header/header.scss';
-@import '../component/footer/footer.scss';
-@import '../component/dialog-with-form/dialog.scss';
+
+
+$contact-form-phone-background: url("/image/cooperation-form.svg") no-repeat;
+$contact-form-phone-title-color: #fff;
+$contact-form-phone-input-color: #000;
+$contact-form-phone-btn-color: #000;
+$contact-form-phone-btn-background: #fff;
+
+
+@import "../style.scss";
 @import '../component/commerce/homepage/homepage.scss';
 @import '../component/commerce/comment/comment.scss';
 @import '../component/commerce/suggest/suggest.scss';
 @import '../component/commerce/cooperation/cooperation.scss';
 @import "../component/contactForm/contactForm.scss";
 
-
-body{
-  background: #fff;
-  font-family: "PF Bague Sans Pro";
-}
-
-.title-block{
-  padding-top: 90px;
-  font-weight: 300;
-  @include respond-to($tablet){
-    margin-top: 100px;
-
-  }
-  @include respond-to($mobile){
-    position: relative;
-    padding-top: 45px;
-    display: inline-block;
-    margin-top: 0px;
-    margin-bottom: 32px;
-    &::before, &::after{
-      content: '';
-      filter: $filter-corver;
-      background: url('/image/left-corner.svg') no-repeat;
-      display: block;
-      width: 16px;
-      height: 16px;
-      position: absolute;
-      left: -10px;
-    }
-    &::after{
-      background: url('/image/right-corner.svg')no-repeat;
-      bottom: 0px;
-      filter: $filter-corver;
-      width: 18px;
-      height: 18px;
-      right: -10px;
-      left: auto;
-    }
-  }
-  @include respond-to($smallMobile){
-    font-size:24px;
-  }
-}
 
 @keyframes arrow-slide-x {
   0%, 100% {

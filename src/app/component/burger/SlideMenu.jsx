@@ -30,13 +30,13 @@ export default function SlideMenu() {
               <Link href="/new-building"><li>новостройки</li></Link>
               <Link href="/secondary"><li>вторичное жилье</li></Link>
               <Link href="/commerce"><li>коммерческая</li></Link>
-              <Link href="/commerce"><li>загородная</li></Link>
+              <Link href="/countryside"><li>загородная</li></Link>
 
             </ul>
             <ul className='pt-12'>
-              <li><a href='https://reznov-group.ru/about_us'>о нас</a></li>
-              <li><a href='https://reznov-group.ru/career'>Вакансии</a></li>
-              <li><a href='https://reznov-group.ru/contacts'>Контакты</a></li>
+              <a href='https://reznov-group.ru/about_us'><li>о нас</li></a>
+              <a href='https://reznov-group.ru/career'><li>Вакансии</li></a>
+              <a href='https://reznov-group.ru/contacts'> <li>Контакты</li></a>
               <button onClick={handleOpen} className="header__btn mt-2">связаться с нами</button>
             </ul>
           </div>

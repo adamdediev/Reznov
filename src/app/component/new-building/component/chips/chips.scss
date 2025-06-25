@@ -8,8 +8,10 @@
           linear-gradient(90deg, transparent 24px, rgba(177, 197, 208, 0.2) 25px, rgba(177, 197, 208, 0.2) 26px, transparent 26px),
           linear-gradient(transparent 24px, rgba(177, 197, 208, 0.2) 25px, rgba(177, 197, 208, 0.2) 26px, transparent 26px);
   background-size: 30px 30px;
-  @include respond-to($tablet) {
-    padding: 32px 0;
+  &__title{
+    @include respond-to($mobile) {
+      text-align:center;
+    }
   }
   &__background{
     position: absolute;
@@ -71,7 +73,7 @@
       display: flex;
       flex-direction: column;
       gap: 24px;
-      background: #fff;
+      background: transparent;
       padding: 0px;
       &-1,&-2{
         background: #000;
@@ -143,62 +145,7 @@
       }
     }
   }
-  &__form{
-    margin-top: 20px;
-    width: 100%;
-    position: relative;
-    background: url("/image/chips-form.svg") no-repeat;
-    padding: 20px 60px;
-    height: 218px;
-    border-radius: 12px;
-
-    @include respond-to($mobile) {
-      background: #696969;
-      padding: 16px;
-      height: auto;
-    }
-      &-row{
-
-      display: flex;
-      gap: 12px;
-      flex-direction: column;
-      text-transform: uppercase;
-      color:#fff;
-      span{
-        font-size: 20px;
-        font-weight: 300;
-      }
-      input{
-        max-width: 390px;
-        border-radius: 8px;
-        border: 2px solid var(--White, #FFF);
-        background: #F9F9F9;
-        padding: 12px 24px;
-        color: #000;
-        &::placeholder{
-          text-transform: uppercase;
-          color: #919191;
-          font-weight: 300;
-        }
-        @include respond-to($mobile) {
-          max-width: 100%;
-        }
-      }
-      button{
-        max-width: 204px;
-        padding: 12px;
-        background: #fff;
-        color: #000;
-        text-transform: uppercase;
-        border-radius: 8px;
-        @include respond-to($mobile) {
-          background: $primary;
-          max-width: 100%;
-        }
-
-      }
-    }
-  }
+  
 
 }
 

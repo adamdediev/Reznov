@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "./globals.scss";
 import Head from 'next/head';
 import Header from './component/header/Header';
 import Footer from './component/footer/Footer';

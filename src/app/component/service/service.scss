@@ -7,6 +7,7 @@
         font-weight: 100;
         color: $page-default-color;
         margin-bottom: 24px;
+       
     }
     &__content-block{
         display: flex;
@@ -175,7 +176,6 @@
                 }                
                 }
 
-                &:hover{}
             }
     &__card-5{
         height: 220px;
@@ -184,7 +184,7 @@
                 }
                 &:hover{
                     &::before{
-                        left: 30%;
+                        left: 50%;
                         height: 150px;
                         background: url('/image/mortgage-active.svg') no-repeat;
                 }           

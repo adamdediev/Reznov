@@ -1,40 +1,41 @@
-$page-default-color:#fff;
+$page-default-color:#000;
 $primary:#85CEE4;
+$body-color:#fff;
 $font-color:#ffff;
 $grey:#343434;
 $border:8px;
-$body-color:#000 ;
 $hover-btn-primary:rgba(255, 255, 255, 0.15);
 $dark-gray: #1C1C1C;
 $filter-corver:brightness(0) saturate(100%) invert(0%) sepia(98%) saturate(6%) hue-rotate(153deg) brightness(96%) contrast(104%);
 // header
-$header-background: rgba(255, 255, 255, 0.1);
-$header-background-movie:rgba(255, 255, 255, 0.2);
-$header-background-btn-mobile:#fff;
+$header-background: rgba(0, 0, 0, 0.60);
+$header-background-movie:rgba(0, 0, 0, 0.90);
+$header-background-btn-mobile:$primary;
 $header-phone:#fff;
-$header-background-btn:#fff;
 $header-background-burger:#fff;
-$header-color-filter-icon-filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(324deg) brightness(96%) contrast(104%);
+$header-color-filter-icon-filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(234deg) brightness(96%) contrast(107%);
 $header-menu-background-burger:#000;
-$header-background-btn-border:#fff;
+$header-background-btn:$primary;
+$header-background-btn-border:$primary;
 $header-logo:url('/image/logo-primary.svg');
 $header-logo-mobile:url('/image/logomobile-primary.svg');
 
 // footer
-$footer-color-filter-icon-filter:brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(179deg) brightness(107%) contrast(102%);
-$footer-logo:url('/image/logomobile-primary.svg');
-$footer-logo-mobile:url('/image/logomobile-primary.svg');
-$footer-nav-link:#fff;
-$footer-nav-link-hover:#fff;
-$footer-color-arrow:brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(179deg) brightness(107%) contrast(102%);
+$footer-color-filter-icon-filter:brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(234deg) brightness(96%) contrast(107%);
+$footer-logo:url('/image/logo-primary-dark.svg');
+$footer-logo-mobile:url('/image/logo-primary-dark.svg');
+$footer-nav-link:#000;
+$footer-nav-link-hover:$primary;
+$footer-color-arrow: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(0%) hue-rotate(234deg) brightness(96%) contrast(107%);
 
 // contact form
-$contact-form-background:#1C1C1C;
-$contact-form-title: $primary;
-$contact-form-background-input: rgba(52, 52, 52, 0.50);;
-$contact-form-title-mobile:#fff;
+$contact-form-background:rgba(0, 0, 0, 0.25);
+$contact-form-title: #000;
+$contact-form-background-input: rgba(0, 0, 0, 0.25);
+$contact-form-title-mobile:#000;
 $contact-filter-arrow:  brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(179deg) brightness(107%) contrast(102%);
 $contact-label:#fff;
+
 
 $contact-form-phone-background: url("/image/cooperation-form.svg") no-repeat;
 $contact-form-phone-title-color: #fff;
@@ -43,13 +44,9 @@ $contact-form-phone-btn-color: #000;
 $contact-form-phone-btn-background: #fff;
 
 @import "../style.scss";
-@import '../component/new-building/component/homepage/homepage.scss';
-@import '../component/new-building/component/where-work/where-work.scss';
-@import '../component/new-building/component/chips/chips.scss';
-@import '../component/new-building/component/partner/partner.scss';
-
-
-
+@import '../component/countryside/homepage/homepage.scss';
+@import '../component/countryside/chips/chips.scss';
+@import "../component/contactForm/contactForm.scss";
 
 
 .title-block{

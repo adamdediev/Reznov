@@ -1,0 +1,40 @@
+.homepage-countryside {
+    position: relative; 
+    width: 100%;
+    min-height: 100vh;       
+    background: url('/image/homepage-countryside.jpg') no-repeat center center ;
+    background-size: cover;   
+    color: #fff;
+    margin-top:-85px;
+
+    &__content{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top:250px;
+        text-transform: uppercase;
+        color:#000;
+        @include respond-to($mobile){
+            align-items: center;
+            padding-top: 200px;
+        }
+    
+    }
+    &__title{
+        font-size: 48px;
+        font-weight: 400;
+        @include respond-to($mobile){
+            font-size: 36px;
+        }
+    }
+    &__subtitle{
+        font-size:20px;
+        font-weight: 200;
+        @include respond-to($mobile){
+            font-size: 16px;
+        }
+    }
+
+}
+
+  

@@ -1,0 +1,64 @@
+
+.contact-form-phone{
+    &__form{
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+        background: $contact-form-phone-background;
+        padding: 20px 60px;
+        height: 218px;
+        border-radius: 12px;
+        z-index: 100;
+        @include respond-to($mobile) {
+          background: #696969;
+          padding: 16px;
+          height: auto;
+        }
+
+        &-row{
+    
+          display: flex;
+          gap: 12px;
+          flex-direction: column;
+          text-transform: uppercase;
+          color:#fff;
+          span{
+            font-size: 20px;
+            font-weight: 300;
+            @include respond-to($mobile) {
+              font-size: 16px;
+            }
+          }
+          input{
+            max-width: 390px;
+            border-radius: 8px;
+            border: 2px solid #FFF;
+            background: #F9F9F9;
+            padding: 12px 24px;
+            color: #000;
+            &::placeholder{
+              text-transform: uppercase;
+              color: #919191;
+              font-weight: 300;
+            }
+            @include respond-to($mobile) {
+              max-width: 100%;
+            }
+          }
+          button{
+            max-width: 204px;
+            padding: 12px;
+            background: #fff;
+            color: #000;
+            text-transform: uppercase;
+            border-radius: 8px;
+            @include respond-to($mobile) {
+              background: $primary;
+              max-width: 100%;
+            }
+    
+          }
+        }
+      }
+
+}

@@ -3,10 +3,6 @@
   position: relative;
   max-height: 658px;
   height: 100vh;
-  @include respond-to($tablet) {
-    margin-top: 200px;
-  }
-
 
   &__background{
     &-1,&-2{
@@ -28,7 +24,7 @@
       @include respond-to($mobile) {
         width: 60%;
       }
-      @include respond-to($smallMobile) {
+      @include respond-to($smallMobileSm) {
         width: 100%;
       }
     }
@@ -61,16 +57,17 @@
       }
       span{
         font-size: 32px;
-        max-width: 1115px;
         font-weight: 300;
+        max-width: 70%;
         @include respond-to($tablet) {
           font-size: 16px;
           max-width: 500px;
          }
         @include respond-to($mobile) {
           max-width: 200px;
-          margin-left: 32px;
+          margin-left: 16px;
           text-align: start;
+       
         }
         }
     }
@@ -81,7 +78,7 @@
         text-align: end;
         font-size: 20px;
         max-width: 250px;
-        margin-right: -70px;
+        margin-right: -40px;
         @include respond-to($smallMobile) {
           max-width: 215px;
 

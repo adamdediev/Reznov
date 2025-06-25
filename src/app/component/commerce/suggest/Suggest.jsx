@@ -1,4 +1,5 @@
 
+import ContactFormPhone from '../../contact-form-phone/ContactFormPhone';
 
 export default function Suggest() {
 
@@ -29,15 +30,7 @@ export default function Suggest() {
                     </div>
                 </div>
 
-                <div className="suggest__form">
-                    <div className="suggest__form-row">
-                         <span className="suggest__form-title">
-                         Оставьте заявку и мы подберем квартиру вашей мечты!
-                         </span>
-                        <input className="suggest__input" type="tel" placeholder="Номер телефона"/>
-                        <button type="submit" className="suggest__button">Свяжитесь со мной</button>
-                    </div>
-                </div>
+                <ContactFormPhone />
             </div>
         </section>
 
