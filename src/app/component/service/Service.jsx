@@ -56,7 +56,7 @@ export default function Service() {
 
     </div>
     <div className="service-mobile__content-block">
-      <a href='/new-buildingnew-building' className="service-mobile__card">
+      <a href='/new-building' className="service-mobile__card">
         <h3>новостройки</h3>
         <span className='service-mobile__card-1'></span>
       </a>
@@ -72,7 +72,7 @@ export default function Service() {
         <h3>коммерческие <br/> помещения</h3>
         <span className='service-mobile__card-4'></span>
       </a>
-      <a href='#' className="service-mobile__card">
+      <a className="service-mobile__card">
         <h3>ипотека</h3>
         <span className='service-mobile__card-5'></span>
       </a>

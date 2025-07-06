@@ -22,12 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <Head>
       <meta property="og:image" content="public/images/secondary-homepage-mobile.jpg" />
       </Head>
 
-      <body className="overflow-x-hidden">
+      <body>
         <Header/>
 
           {children}

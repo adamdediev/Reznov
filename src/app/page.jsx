@@ -10,7 +10,9 @@ import ContactForm from './component/contactForm/ContactForm';
 
 export default function Home() {
   return (
-    <div className="container">
+    
+    <main>
+      <div className="container">
       <Homepage/>
       <Service/>
       <OurFaces/>
@@ -18,6 +20,7 @@ export default function Home() {
       <Number/>
       <Review/>
       <ContactForm/>
-    </div>
+     </div>
+    </main>
   );
 }

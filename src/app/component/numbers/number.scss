@@ -1,7 +1,6 @@
 
 .number{
     position: relative;
-    margin: -20px;
 
     @include respond-to($mobile){
         height: 850px;

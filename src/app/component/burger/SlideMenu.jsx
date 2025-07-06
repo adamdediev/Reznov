@@ -26,11 +26,11 @@ export default function SlideMenu() {
           </div>
           <div className='slide-menu__nav'>
             <ul>
-              <Link href="/"><li>главная</li></Link>
-              <Link href="/new-building"><li>новостройки</li></Link>
-              <Link href="/secondary"><li>вторичное жилье</li></Link>
-              <Link href="/commerce"><li>коммерческая</li></Link>
-              <Link href="/countryside"><li>загородная</li></Link>
+              <a href="/"><li>главная</li></a>
+              <a href="/new-building"><li>новостройки</li></a>
+              <a href="/secondary"><li>вторичное жилье</li></a>
+              <a href="/commerce"><li>коммерческая</li></a>
+              <a href="/countryside"><li>загородная</li></a>
 
             </ul>
             <ul className='pt-12'>

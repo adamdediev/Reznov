@@ -30,7 +30,8 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "PF Bague Sans Pro";
-  background: $body-color !important;
+  background: $body-color ;
+  overflow-x:hidden;
 }
 
 h2{

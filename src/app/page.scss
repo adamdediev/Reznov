@@ -64,6 +64,7 @@ label{
 }
 
 .title-block{
+  color: $primary;
     margin-top: 180px;
     @include respond-to($tablet){
       margin-top: 100px;
