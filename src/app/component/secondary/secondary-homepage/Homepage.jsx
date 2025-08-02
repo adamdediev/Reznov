@@ -1,9 +1,9 @@
 'use client'
 import { useState } from 'react';
 import Image from 'next/image';
-import homepage from '../../../../../../public/image/secondary-homepage.jpg';
-import homepageMobile from '../../../../../../public/image/secondary-homepage-mobile.jpg';
-import DialogWithForm from '../../../dialog-with-form/DialogWithForm';
+import homepage from '../../../../../public/image/secondary-homepage.jpg';
+import homepageMobile from '../../../../../public/image/secondary-homepage-mobile.jpg';
+import DialogWithForm from '../../dialog-with-form/DialogWithForm';
 
 export default function Homepage() {
   const [open, setOpen] = useState(false);

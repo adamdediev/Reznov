@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactFormPhone from '../../contact-form-phone/ContactFormPhone'
 
 export default function Chips() {
   return (
@@ -15,7 +16,7 @@ export default function Chips() {
             </div> 
             <div className='chips-countryside__block-2-2'> 
             <p>от ведущих экспертов рынка</p> 
-            <h2>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</h2>
+            <h2><span>БЕСПЛАТНАЯ</span> КОНСУЛЬТАЦИЯ</h2>
                         
             </div>
 
@@ -26,6 +27,10 @@ export default function Chips() {
             </div>
            </div>
         </div>
+        <div className="container">
+        <ContactFormPhone />
+        </div>
+        
     </section>
   )
 }

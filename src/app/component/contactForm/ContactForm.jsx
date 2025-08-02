@@ -1,8 +1,6 @@
 import Form from './Form';
 
 export default function ContactForm() {
-  
-
   return (
     <section className="contact-form container">
         <h2 className="title-block">свяжитесь с нами</h2>

@@ -2,6 +2,7 @@
 .chips-countryside{
     background: linear-gradient(180deg,  #85CEE4 0%, #FFF 100%);
     padding-top: 90px;
+    padding-bottom: 90px;
     h2,p{
         font-size: 20px;
         font-weight: 300;
@@ -12,8 +13,7 @@
     h2{
         font-size: 36px;
         font-weight: 900;
-                position: absolute;
-
+        position: absolute;
 
     }
     &__content{
@@ -27,6 +27,10 @@
         gap:24px;
         position: relative;
         overflow: hidden;
+        @include respond-to($mobile){
+            flex-direction: column;
+            height: auto;
+        }
         div{
             background: #fff;
             border-radius: 12px;
@@ -35,21 +39,48 @@
             overflow: hidden;
             position:relative;
             padding: 16px;
+            @include respond-to($mobile){
+                max-width: 100%;
+                height: 160px;
+                justify-content: center;
+                
+                p{
+                    font-weight: 300;
+                    max-width: 200px;
+                    text-align: center;
 
+                }
+            }
+            
         }
         &-1{
             text-align:end;
             justify-content: flex-end;
             align-items: center;
             max-width: 272px;
+            @include respond-to($mobile){
+                flex-direction: column;
+            }
             h2{
              transform: rotate(270deg);
              bottom: 125px;
              left: -133px;
              font-size: 55px;
+             @include respond-to($mobile){
+                transform: rotate(360deg);
+                bottom: 72px;
+                left: auto;
+                right: auto;
+            }
+             
           }
           p{
             max-width: 150px;
+            @include respond-to($mobile){
+                text-align: center;
+                color: #000;
+                margin-top: 16px;
+            }
           }
         }
 
@@ -61,14 +92,15 @@
             max-width: 567px;
             flex-direction: column;
             gap:24px;
+            @include respond-to($mobile){
+                height: auto !important;
+            }
             &-1,&-2{
                 display: flex;
                 height: 340px;
                 max-width: 567px ;
                 min-width: 300px ;
                 gap:24px;
-            }
-            &-1,&-2{
                 align-items: center;
                 justify-content: flex-end;
                 h2{
@@ -79,6 +111,25 @@
                 p{
                     margin-top: 16px;
                 }
+                @include respond-to($mobile){
+                    height: 160px;
+                }
+            }
+            &-1{
+                @include respond-to($mobile){
+                    h2{
+                        left: auto;
+                        top: -27px;
+                        font-weight: 600;
+                        text-transform: lowercase;
+                    }
+                    p{
+                        color: #000;
+                    }
+
+                }
+            
+               
             }
             &-2{
                 background: #747474 !important;
@@ -87,6 +138,23 @@
                     font-size: 38px;
                     bottom: -35px;
                     top:auto;
+                    white-space: nowrap;
+                }
+                @include respond-to($mobile){
+                    align-items: start;     
+                    p{
+                        color: #85CEE4;                                       
+                    }
+                    h2{
+                        white-space: wrap;
+                        display: flex;
+                        flex-direction: column;
+                        line-height: 70%;
+                        bottom: -25px;
+                        span{
+                           font-size: 21px; 
+                        }
+                    }
                 }
             }
           
@@ -105,6 +173,17 @@
           }
           p{
             text-align: start;
+          }
+          @include respond-to($mobile){
+            background:#1F1F1F !important;
+            h2{
+                transform: rotate(0deg);
+                bottom: 77px;
+                left: auto;
+            }
+            p{
+                margin-top: 24px;
+            }
           }
         }
         

@@ -37,16 +37,17 @@ $contact-filter-arrow:  brightness(0) saturate(100%) invert(100%) sepia(0%) satu
 $contact-label:#fff;
 
 
-$contact-form-phone-background: url("/image/cooperation-form.svg") no-repeat;
-$contact-form-phone-title-color: #fff;
-$contact-form-phone-input-color: #000;
-$contact-form-phone-btn-color: #000;
-$contact-form-phone-btn-background: #fff;
+$contact-form-phone-background: url("/image/countryside-form.svg") no-repeat;
+$contact-form-phone-title-color: #000;
+$contact-form-phone-input-color: #85CEE4;
+$contact-form-phone-btn-color: #85CEE4;
+$contact-form-phone-btn-background: #000;
 
 @import "../style.scss";
 @import '../component/countryside/homepage/homepage.scss';
 @import '../component/countryside/chips/chips.scss';
-@import "../component/contactForm/contactForm.scss";
+@import '../component/countryside/contact-form-countryside/contact-form-countryside.scss';
+@import '../component/countryside/photo-gallery/photo-gallery.scss';
 
 
 .title-block{

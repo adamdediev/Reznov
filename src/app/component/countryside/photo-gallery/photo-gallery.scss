@@ -1,0 +1,13 @@
+.photo-gllery{
+    &__desktop{
+        @include respond-to($mobile){
+        display: none;
+        }
+    }
+    &__mobile{
+        display: none;
+        @include respond-to($mobile){
+            display: block;
+        }
+    }
+}
