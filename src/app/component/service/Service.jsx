@@ -37,7 +37,7 @@ export default function Service() {
 
     <span className='service__block-item-card service__card-3'>
     <h4>коммерческие <br/> помещения</h4>
-    <a href="/commercial">Перейти</a>
+    <a href="/commerce">Перейти</a>
     </span>
 
     </div>
@@ -45,12 +45,13 @@ export default function Service() {
     <div className="service__block-item">
     <span className='service__block-item-card service__card-4'>
     <h4>загородная <br/> недвижимость</h4>
-    <a href="/country">Перейти</a>
+    <a href="/countryside">Перейти</a>
     </span>
     <Image className='service__block-item-2' src={newBuilding} alt='car card'/>
 
     <span className='service__block-item-card service__card-5'>
     <h4>ипотека</h4>
+    <a href="/countryside">Перейти</a>
     </span>
     </div>
 

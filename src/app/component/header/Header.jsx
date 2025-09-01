@@ -26,9 +26,9 @@ export default function Header() {
     <div className="container flex justify-between">
         <a href="/"><div className="header__logo"></div></a>
           <nav className='flex items-center sm:gap-8 gap-4'>
-          <a href="tel:8 800 201-78-81"> <button className='header__btn-mobile'></button></a>
+          <a href="tel:8 (925) 175-85-26"> <button className='header__btn-mobile'></button></a>
             <button className='header__btn md:block hidden' onClick={handleOpen}>обратный звонок</button>
-            <div className="header__phone md:block hidden"><a href="tel:8 800 201-78-81">8 800 201-78-81</a></div>
+            <div className="header__phone md:block hidden"><a href="tel:8 (925) 175-85-26">8 (925) 175-85-26</a></div>
             <SlideMenu/>
           </nav>
         </div>

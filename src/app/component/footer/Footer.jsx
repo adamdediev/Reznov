@@ -25,16 +25,16 @@ export default function Footer() {
           <li><Link href="/new-building">НОВОСТРОЙКИ</Link></li>
           <li><Link href="/secondary">ВТОРИЧКА</Link></li>
           <li><Link href="/commerce">КОММЕРЦИЯ</Link></li>
-          <li><Link href="/commerce">ЗАГОРОДНАЯ НЕДВИЖИМОСТЬ</Link></li>
+          <li><Link href="/countryside">ЗАГОРОДНАЯ НЕДВИЖИМОСТЬ</Link></li>
         </ul>
         <ul className="footer__nav-contact">
           <li><a href='https://reznov-group.ru/about_us'>О НАС</a></li>
-          <li><a href='https://reznov-group.ru/career'>КОНТАКТЫ</a></li>
-          <li><a href='https://reznov-group.ru/contacts'>ВАКАНСИИ</a></li>
+          <li><a href='https://reznov-group.ru/contacts'>КОНТАКТЫ</a></li>
+          <li><a href='https://reznov-group.ru/career'>ВАКАНСИИ</a></li>
         </ul>
       </div>
       <div className="footer__contact">
-        <span>8 800 201-78-81</span>
+        <span>8 (925) 175-85-26</span>
         <div className="footer__box-icon">
        <a href="https://vk.com/reznov.realty"><Image src={vk}  alt='vk'/></a>  
        <a href="https://instagram.com/reznov.realty?igshid=NTc4MTIwNjQ2YQ=="><Image src={instagramm}  alt='instagramm'/></a>  
