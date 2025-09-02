@@ -52,30 +52,3 @@ $contact-form-phone-btn-background: #fff;
 @import "../component/contactForm/contactForm.scss";
 
 
-@keyframes arrow-slide-x {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(8px);
-  }
-}
-
-@keyframes arrow-slide-y {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-.arrow-horiz {
-  animation: arrow-slide-x 1.2s ease-in-out infinite;
-  will-change: transform;
-}
-
-.arrow-vert {
-  animation: arrow-slide-y 1.2s ease-in-out infinite;
-  will-change: transform;
-}

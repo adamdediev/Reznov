@@ -26,7 +26,7 @@ export default function Number() {
         банков-партнеров
       </span>
       <span className='lg:w-[303px] lg:h-[303px] w-[215px] h-[215px] lg:mt-[-100px] -mt-10 bg-[#1C1C1C] text-white animate-move-sideways-1 sm:order-5 order-4'>
-        <strong className='lg:text-5xl text-3xl'>200+ млн</strong>
+        <strong className='lg:text-5xl text-3xl'>600+ млн</strong>
         сумма проведенных <br/> сделок в 2024 г.
       </span>
       <span className='lg:w-[311px] lg:h-[311px] w-[230px] h-[230px] sm:ml-0 -ml-24 sm:mt-0 -mt-10 bg-[#A4B8BE] animate-move-sideways-2 sm:order-6 order-5'>

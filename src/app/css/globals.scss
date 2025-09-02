@@ -99,3 +99,30 @@ $smallMobileSm: 450px;
 }
 
 
+.arrow-horiz__animation {
+  animation: arrow-slide-x 1.2s ease-in-out infinite;
+  will-change: transform;
+}
+
+.arrow-vert__animation {
+  animation: arrow-slide-y 1.2s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes arrow-slide-x {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+}
+
+@keyframes arrow-slide-y {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}

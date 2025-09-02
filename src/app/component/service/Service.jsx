@@ -51,7 +51,7 @@ export default function Service() {
 
     <span className='service__block-item-card service__card-5'>
     <h4>ипотека</h4>
-    <a href="/countryside">Перейти</a>
+    <a onClick={handleOpen}>Звонок</a>
     </span>
     </div>
 
@@ -69,7 +69,7 @@ export default function Service() {
         <h3>загородная <br/> недвижимость</h3>
         <span className='service-mobile__card-3'></span>
       </a>
-      <a href='/commercial' className="service-mobile__card">
+      <a href='/commerce' className="service-mobile__card">
         <h3>коммерческие <br/> помещения</h3>
         <span className='service-mobile__card-4'></span>
       </a>
