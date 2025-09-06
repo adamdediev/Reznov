@@ -14,7 +14,7 @@
         background:$header-background-movie;
     }
     &__burger{
-        background-color:  $header-background-burger !important; 
+        background-color:  $header-background-burger; 
     }
     &__logo{
         width: 158px;
@@ -65,4 +65,10 @@
         color: $header-phone;
         font-size: 20px;
     }
+   
 }
+ .slide-menu__header{
+     .header__burger{
+  background-color:  #fff; 
+    }
+    }

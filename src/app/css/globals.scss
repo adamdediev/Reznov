@@ -126,3 +126,8 @@ $smallMobileSm: 450px;
     transform: translateY(-8px);
   }
 }
+.title-block{
+    @include respond-to($mobile){
+      margin-left:12px;
+    }
+}

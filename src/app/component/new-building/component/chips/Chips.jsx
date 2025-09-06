@@ -31,15 +31,6 @@ export default function Chips() {
                     </div>
 
                 </div>
-                {/* <div className="chips__form">
-                    <div className="chips__form-row">
-                         <span className="chips__form-title">
-                         Оставьте заявку и мы подберем квартиру вашей мечты!
-                         </span>
-                        <input className="chips__input" type="tel" placeholder="Номер телефона"/>
-                        <button type="submit" className="chips__button">Свяжитесь со мной</button>
-                    </div>
-                </div> */}
                 <ContactFormPhone />
             </div>
         </section>

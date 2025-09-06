@@ -29,6 +29,7 @@ export default function SlideMenu() {
               <a href="/"><li>главная</li></a>
               <a href="/new-building"><li>новостройки</li></a>
               <a href="/secondary"><li>вторичное жилье</li></a>
+              <a href="/secondary-real-estate-search"><li>вторичная <br/>недвижимость</li></a>
               <a href="/commerce"><li>коммерческая</li></a>
               <a href="/countryside"><li>загородная</li></a>
 

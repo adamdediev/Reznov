@@ -13,7 +13,7 @@ export default function Partners() {
   return (
     <section className="partners">
             <div className="container">
-              <h2 className="title-block">партнеры агенства</h2>
+              <h2 className="title-block">партнеры агентства</h2>
             </div>
             <div className="partners__block">
               <div className="partners__block-1">

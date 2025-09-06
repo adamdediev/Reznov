@@ -73,7 +73,7 @@ export default function Service() {
         <h3>коммерческие <br/> помещения</h3>
         <span className='service-mobile__card-4'></span>
       </a>
-      <a className="service-mobile__card">
+      <a onClick={handleOpen} className="service-mobile__card">
         <h3>ипотека</h3>
         <span className='service-mobile__card-5'></span>
       </a>

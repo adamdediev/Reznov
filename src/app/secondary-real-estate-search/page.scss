@@ -9,7 +9,7 @@ $dark-gray: #1C1C1C;
 $filter-corver:brightness(0) saturate(100%) invert(0%) sepia(98%) saturate(6%) hue-rotate(153deg) brightness(96%) contrast(104%);
 // header
 $header-background: rgba(255, 255, 255, 0.1);
-$header-background-movie:rgba(255, 255, 255, 0.2);
+$header-background-movie:rgb(133, 206, 228, 0.5);
 $header-background-btn-mobile:#000;
 $header-phone:#000;
 $header-background-burger:#000;
@@ -44,11 +44,12 @@ $contact-form-phone-btn-color: #000;
 $contact-form-phone-btn-background: #fff;
 
 @import "../style.scss";
-@import '../component/secondary/secondary-homepage/homepage.scss';
-@import '../component/secondary/secondary-story/story.scss';
-@import '../component/secondary/secondary-numbers/numbers.scss';
-@import '../component/secondary/secondary-steps/steps.scss';
-@import '../component/secondary/secondary-partners/partners.scss';
+@import '../component/secondary-real-estate-search/homepage/homepage.scss';
+@import '../component/secondary-real-estate-search/suggest/suggest.scss';
+@import '../component/secondary-real-estate-search/where-work/where-work.scss';
+@import '../component/secondary-real-estate-search/steps/steps.scss';
+@import '../component/secondary-real-estate-search/contact-form/contact-form.scss';
+
 
 .title-block{
     padding-top: 90px;

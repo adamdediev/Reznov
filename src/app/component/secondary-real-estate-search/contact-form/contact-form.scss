@@ -1,0 +1,20 @@
+.contact-form{
+  &__title{
+        @include respond-to($mobile){
+                 line-height: 100%;
+        }
+    span{
+     
+
+      @include respond-to($mobile){
+       font-size: 4vw;
+       line-height: 100%;
+    }
+    }
+  }
+  p{
+   
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}

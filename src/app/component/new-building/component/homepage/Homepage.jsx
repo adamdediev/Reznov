@@ -26,7 +26,7 @@ export default function Homepage() {
           </svg>
           <button onClick={handleOpen}>Позвоните мне</button>
         </div>
-          <button className="homepage-new-building__button-mobile">Позвоните мне</button>
+          <button  onClick={handleOpen} className="homepage-new-building__button-mobile">Позвоните мне</button>
       </div>
       <DialogWithForm open={open} setOpen={setOpen}  />
 

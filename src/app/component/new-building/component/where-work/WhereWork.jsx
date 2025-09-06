@@ -55,7 +55,6 @@ const card = [
 ]
 
 export default function WhereWork() {
-    const [open, setOpen] = useState(false);
     const [openIndex, setOpenIndex] = useState(null);
 
     return (

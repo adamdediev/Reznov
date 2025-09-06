@@ -28,7 +28,7 @@ export default function Chips() {
            </div>
         </div>
         <div className="container">
-        <ContactFormPhone />
+        <ContactFormPhone house={true} />
         </div>
         
     </section>

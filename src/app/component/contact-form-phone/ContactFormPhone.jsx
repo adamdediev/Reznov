@@ -3,7 +3,7 @@
 import InputMask from 'react-input-mask-next'
 import { useState } from 'react';
 
-export default function ContactFormPhone() {
+export default function ContactFormPhone({ house = false}) {
   const [phone, setPhone] = useState('')
 
   const handlePhoneChange = (e) => {
@@ -19,7 +19,7 @@ export default function ContactFormPhone() {
   <div className="contact-form-phone__form">
     <div className="contact-form-phone__form-row">
          <span className="contact-form-phone__form-title">
-         Оставьте заявку и мы подберем квартиру вашей мечты!
+         { house ? " Оставьте заявку и мы подберем дом вашей мечты!" :  "Оставьте заявку и мы подберем квартиру вашей мечты!" }
          </span>
          <InputMask
           mask="+7 (999) 999-99-99"

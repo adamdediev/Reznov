@@ -1,20 +1,18 @@
 import './page.scss'
-import Homepage from '../component/secondary/secondary-homepage/Homepage';
-import Story from '../component/secondary/secondary-story/Story';
-import Numbers from '../component/secondary/secondary-numbers/Numbers';
-import Steps from '../component/secondary/secondary-steps/Steps';
-import Partners from '../component/secondary/secondary-partners/Partners';
-import ContactForm from '../component/contactForm/ContactForm';
+import Homepage from '../component/secondary-real-estate-search/homepage/Homepage';
+import Suggest from '../component/secondary-real-estate-search/suggest/Suggest';
+import WhereWork from '../component/secondary-real-estate-search/where-work/WhereWork';
+import Steps from '../component/secondary-real-estate-search/steps/Steps';
+import ContactForm from '../component/secondary-real-estate-search/contact-form/ContactForm';
 
 
 export default function page() {
   return (
     <main>
       <Homepage />
-      <Story />
-      <Numbers />
+      <Suggest />
+      <WhereWork />
       <Steps />
-      <Partners />
       <ContactForm />
     </main>
   )

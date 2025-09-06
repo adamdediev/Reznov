@@ -1,11 +1,6 @@
 'use client'
 import Image  from 'next/image';
 import arrow from '../../../../public/image/footer-arrow.svg';
-import vk from '../../../../public/image/vk.svg';
-import instagramm from '../../../../public/image/instagramm.svg';
-import telegramm from '../../../../public/image/telegramm.svg';
-import youtube from '../../../../public/image/youtube.svg';
-import mapIcon from '../../../../public/image/map-icon.svg';
 import Link from "next/link";
 import { FaVk, FaInstagram, FaTelegramPlane, FaYoutube, FaMapMarkerAlt } from "react-icons/fa";
 

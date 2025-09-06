@@ -1,0 +1,242 @@
+.suggest{
+  position: relative;
+  padding: 90px 16px;
+  background: #000;
+  @include respond-to($mobile){
+    padding: 60px 16px 0px 16px ;
+  }
+  .contact-form-phone__form{
+    margin-bottom: -108px;
+    margin-top: 50px;
+  }
+  &__title{
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #fff;
+    @include respond-to($mobile){
+      text-align: center;
+      font-size: 24px;
+    }
+  }
+  &__container{
+    display: flex;
+    height: 100%;
+    @include respond-to($mobile){
+      flex-direction: column;
+    }
+  }
+  &__offices{
+    border-radius: 12px;
+    background: #1F1F1F;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 32px;
+    padding: 24px;
+    color: #fff;
+    max-width: 272px;
+    width: 100%;
+
+    &:hover{
+      content:"";
+      background: url("/image/secondary-real-estate-search/secondary-real-estate-search-ready-apartament.jpg") no-repeat;
+      position: relative;
+      background-size: cover;
+      font-size: 0;
+      background-position: center;
+
+    }
+    @include respond-to($mobile){
+      display: block;
+      padding: 50px ;
+      margin-bottom: 20px;
+      &:hover{
+        background: #1F1F1F;
+        font-size: 20px;
+      }
+    }
+
+  }
+  &__container-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 160px 160px 160px;
+    grid-template-areas:
+    "retail new-complex"
+    "nonstationary new-complex"
+    "standalone standalone";
+    gap: 20px;
+    margin-left: 20px;
+    @include respond-to($mobile){
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+    }
+    div{
+      width: 100%;
+      padding: 24px;
+      &:hover{
+        content:"";
+        position: relative;
+        background-size: cover;
+        font-size: 0;
+
+      }
+      @include respond-to($tablet){
+        padding: 16px;
+
+      }
+      @include respond-to($mobile){
+        padding: 50px 0px ;
+        &:hover{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  &__retail {
+    grid-area: retail;
+    background: #111;
+    color: #fff;
+    border-radius: 8px;
+    &:hover{
+      background: url("/image/secondary-real-estate-search/secondary-real-estate-search-new-building.jpg") no-repeat;
+      background-position: center;
+    }
+  }
+  &__new-complex {
+    grid-area: new-complex;
+    background: #fff;
+    color: #000;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-end;
+    align-content: center;
+    text-align: end;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 285px;
+    &:hover{
+      background: url("/image/secondary-real-estate-search/secondary-real-estate-search-land-plot.jpg") no-repeat;
+      background-position: center;
+    }
+    @include respond-to($mobile) {
+      display: block;
+    }
+    }
+  &__nonstationary {
+    grid-area: nonstationary;
+    background: #222;
+    color: #fff;
+    border-radius: 8px;
+    text-align: end;
+    &:hover{
+      background: url("/image/secondary-real-estate-search/secondary-real-estate-search-townhouse.jpg") no-repeat;
+      background-position: bottom;
+        }
+  }
+  &__standalone {
+    grid-area: standalone;
+    background: #a8ddea;
+    color: #000;
+    border-radius: 8px;
+    &:hover{
+      background: url("/image/secondary-real-estate-search/secondary-real-estate-search-business-premises.jpg") no-repeat;
+      background-position: center;
+
+    }
+  }
+  &__font{
+    padding: 16px;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: normal;
+    @include respond-to($tablet){
+      font-size: 26px;
+      padding: 8px;
+    }
+    @include respond-to($mobile){
+      font-size: 20px;
+      max-width: 100%;
+      text-align: center;
+      align-items: center;
+      padding: 50px 0px;
+
+    }
+
+    strong{
+      font-weight: 500;
+    }
+  }
+  &__form{
+    width: 100%;
+    position: absolute;
+    background: url("/image/cooperation-form.svg") no-repeat;
+    padding: 20px 60px;
+    height: 218px;
+    border-radius: 12px;
+    bottom: -109px;
+    z-index: 100;
+    @include respond-to($mobile) {
+      background: #696969;
+      padding: 16px;
+      height: auto;
+      width: 95%;
+      bottom: -300px;
+    }
+    @include respond-to($smallMobile) {
+      width: 91%;
+      bottom: -350px;
+    }
+    &-row{
+
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+      text-transform: uppercase;
+      color:#fff;
+      span{
+        font-size: 20px;
+        font-weight: 300;
+      }
+      input{
+        max-width: 390px;
+        border-radius: 8px;
+        border: 2px solid #FFF;
+        background: #F9F9F9;
+        padding: 12px 24px;
+        color: #000;
+        &::placeholder{
+          text-transform: uppercase;
+          color: #919191;
+          font-weight: 300;
+        }
+        @include respond-to($mobile) {
+          max-width: 100%;
+        }
+      }
+      button{
+        max-width: 204px;
+        padding: 12px;
+        background: #fff;
+        color: #000;
+        text-transform: uppercase;
+        border-radius: 8px;
+        @include respond-to($mobile) {
+          background: $primary;
+          max-width: 100%;
+        }
+
+      }
+    }
+  }
+}
+
+
+
+

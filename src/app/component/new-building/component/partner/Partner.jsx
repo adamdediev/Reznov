@@ -8,7 +8,7 @@ import  Partner4 from"/public/image/patner-chips-4.svg";
 export default function Partner() {
     return (
         <section className="partner">
-                <div className="partner__title container">партнеры агенства</div>
+                <div className="partner__title container">партнеры агентства</div>
             <div className="partner__block-background">
                  <div className="container partner__block-image">
                     <Image src={Partner1} alt={"Partner1"}/>
