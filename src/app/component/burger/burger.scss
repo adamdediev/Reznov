@@ -1,6 +1,6 @@
 
 .slide-menu{
-    position: absolute;
+    position: fixed;
     width: 310px;
     height: 100vh;
     background: $header-menu-background-burger;
@@ -12,7 +12,7 @@
     scrollbar-color: #646464 #000;
 
     &__none{
-        position: absolute;
+        position: fixed;
         right: -310px;
         transition: right 0.9s ease;
         width: 310px;

@@ -16,7 +16,7 @@ const StoryCard = ({ title, listItems, videoSrc, images }) => {
           </ul>
         </div>
         <div className="story__content-video">
-          <video autoPlay loop muted>
+          <video video autoPlay loop muted playsInline webkit-playsinline>
             <source src={videoSrc} type="video/mp4" />
             Ваш браузер не поддерживает видео.
           </video>

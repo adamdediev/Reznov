@@ -4,7 +4,7 @@
         display: flex;
         gap: 25px;
         @include respond-to($smallMobile){
-            overflow-x: auto;
+            overflow-x: scroll;
             scroll-snap-type: x mandatory; 
             -webkit-overflow-scrolling: touch; 
             scroll-behavior: smooth; 
