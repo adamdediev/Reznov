@@ -122,6 +122,10 @@
                         top: -27px;
                         font-weight: 600;
                         text-transform: lowercase;
+                    @include respond-to($smallMobile){
+                        top: -10px;
+                             font-size: 11vw;
+                        }
                     }
                     p{
                         color: #000;
@@ -154,8 +158,10 @@
                         span{
                            font-size: 21px; 
                         }
+        
                     }
                 }
+              
             }
           
         }
