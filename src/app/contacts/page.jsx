@@ -2,6 +2,33 @@ import './page.scss';
 import { Mail, Phone, MapPin, MessageCircle } from "lucide-react"; 
 import { FaTelegramPlane } from "react-icons/fa";
 
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
+
+export const metadata = {
+  title: "Контакты | Reznov",
+  description:
+    "Свяжитесь с компанией Reznov для консультации и подбора недвижимости в Москве и области.",
+  openGraph: {
+    title: "Контакты | Reznov",
+    description:
+      "Оставьте заявку или свяжитесь с нами для получения консультации.",
+    url: `${baseUrl}/contacts`,
+    siteName: "Reznov",
+    images: [
+      {
+        url: `${baseUrl}/og-logo.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Контакты Reznov",
+      },
+    ],
+    locale: "ru_RU",
+    type: "website",
+  },
+  alternates: { canonical: `${baseUrl}/contacts` },
+};
+
+
 export default function Page() {
   return (
     <div className="bg-[#000] flex container items-center justify-center">

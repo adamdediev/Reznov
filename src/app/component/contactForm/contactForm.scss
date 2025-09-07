@@ -163,6 +163,7 @@
   border-radius: 8px;
   color: #fff;
   opacity: 0;
+  text-transform: lowercase;
   transform: translateY(10px);
   transition: opacity 0.4s ease, transform 0.4s ease;
   pointer-events: none; 

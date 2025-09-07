@@ -69,7 +69,7 @@ export default function ContactFormPhone({ house = false }) {
           placeholder="+7 (___) ___-__-__"
           className={`form-input ${error ? 'border-red-500' : ''}`}
         />
-        <p className={`${error ? "opacity-100" : "opacity-0"} text-red-500 text-sm`}>Введите корректный номер телефона</p>
+        <p className={`${error ? "opacity-100" : "opacity-0"} text-red-500 text-xs`}>Введите корректный номер телефона</p>
 
         <button onClick={handleSubmit} type="submit" className="contact-form-phone__button">
           Свяжитесь со мной

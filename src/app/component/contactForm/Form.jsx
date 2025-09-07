@@ -2,10 +2,10 @@
 import InputMask from 'react-input-mask-next'
 import { useState } from 'react'
 
-export default function Form() {
+export default function Form({ onSuccess }) {
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
-  const [status, setStatus] = useState({ type: '', message: '' }) // 👈 объект
+  const [status, setStatus] = useState({ type: '', message: '' })
   const [errors, setErrors] = useState({ name: '', phone: '' })
 
   const handleNameChange = (e) => {
@@ -61,12 +61,15 @@ export default function Form() {
         setPhone('')
         setErrors({ name: '', phone: '' })
 
-        // setTimeout(() => setStatus({ type: '', message: '' }), 3000)
+        setTimeout(() => setStatus({ type: '', message: '' }), 3000)
       } else {
         setStatus({ type: 'error', message: 'Ошибка при отправке: ' + (data.error || JSON.stringify(data)) })
       }
     } catch (err) {
       setStatus({ type: 'error', message: 'Ошибка: ' + err.message })
+    }
+    if(onSuccess){
+      onSuccess()
     }
   }
 

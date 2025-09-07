@@ -25,7 +25,7 @@ export default function DialogWithForm({open,setOpen}) {
                     Обратный Звонок 
                   </DialogTitle>
                 </div>
-             <Form />
+             <Form onSuccess ={()=>{setOpen(false)}}/>
           </div>
           </DialogPanel>
         </div>
