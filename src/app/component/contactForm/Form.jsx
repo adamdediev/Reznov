@@ -7,6 +7,7 @@ export default function Form({ onSuccess }) {
   const [phone, setPhone] = useState('')
   const [status, setStatus] = useState({ type: '', message: '' })
   const [errors, setErrors] = useState({ name: '', phone: '' })
+  const [disable, setDisable] = useState(false)
 
   const handleNameChange = (e) => {
     const value = e.target.value
@@ -49,6 +50,7 @@ export default function Form({ onSuccess }) {
     setStatus({ type: '', message: 'Отправка...' })
 
     try {
+      setDisable(true)
       const res = await fetch('/api/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -67,6 +69,9 @@ export default function Form({ onSuccess }) {
       }
     } catch (err) {
       setStatus({ type: 'error', message: 'Ошибка: ' + err.message })
+    }
+     finally{
+      setDisable(false)
     }
     if(onSuccess){
       onSuccess()
@@ -102,7 +107,7 @@ export default function Form({ onSuccess }) {
        <p className={`${errors.phone ? "opacity-100" : "opacity-0"} text-red-500 text-sm`}>Введите корректный номер телефона</p>
       </div>
 
-      <button type="submit" className="form-button">свяжитесь со мной</button>
+      <button  onClick={handleSubmit} type="submit" className={`${disable ? 'opacity-50':''} form-button`} disabled={disable} >свяжитесь со мной</button>
 
       
     </form>    

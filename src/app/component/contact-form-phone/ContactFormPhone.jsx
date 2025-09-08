@@ -6,6 +6,7 @@ export default function ContactFormPhone({ house = false }) {
   const [phone, setPhone] = useState('')
   const [error, setError] = useState('')
   const [status, setStatus] = useState({ type: '', message: '' })
+  const [disable, setDisable] = useState(false)
 
   const handlePhoneChange = (e) => {
     const numericValue = e.target.value.replace(/\D/g, '')
@@ -33,10 +34,11 @@ export default function ContactFormPhone({ house = false }) {
     setStatus({ type: '', message: 'Отправка...' })
 
     try {
+        setDisable(true)
       const res = await fetch('/api/lead', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ phone: '+' + phone }), // имя не передаём
+        body: JSON.stringify({ phone: '+' + phone }), 
       })
       const data = await res.json()
 
@@ -51,6 +53,9 @@ export default function ContactFormPhone({ house = false }) {
       }
     } catch (err) {
       setStatus({ type: 'error', message: 'Ошибка: ' + err.message })
+    }
+    finally{
+        setDisable(false)
     }
   }
 
@@ -71,7 +76,7 @@ export default function ContactFormPhone({ house = false }) {
         />
         <p className={`${error ? "opacity-100" : "opacity-0"} text-red-500 text-xs`}>Введите корректный номер телефона</p>
 
-        <button onClick={handleSubmit} type="submit" className="contact-form-phone__button">
+        <button onClick={handleSubmit} type="submit" className={`${disable ? 'opacity-50':''} contact-form-phone__button`} disabled={disable}>
           Свяжитесь со мной
         </button>
 
