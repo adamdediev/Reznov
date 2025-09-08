@@ -1,7 +1,7 @@
 import Image  from 'next/image';
 import Denis from '../../../../public/image/denis.jpg';
 import Ksenia from '../../../../public/image/Ksenia.jpg';
-import Sergey from '../../../../public/image/Sergey.jpg';
+import Sergey from '../../../../public/image/Sergey.jpeg';
 
 
 export default function OurFaces() {

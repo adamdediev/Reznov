@@ -34,7 +34,7 @@ export default function Footer() {
         <div className="footer__box-icon">
       <a href="https://vk.com/reznov.realty"><FaVk size={28}/></a>
       <a href="https://instagram.com/reznov.realty?igshid=NTc4MTIwNjQ2YQ=="><FaInstagram size={25} /></a>
-      <a href="https://t.me/reznovrealty"><FaTelegramPlane size={25} /></a>
+      <a href="https://t.me/reznov_realty"><FaTelegramPlane size={25} /></a>
       <a href="https://www.youtube.com/channel/UCv5jvTO7j5wAG3Z7alk2-8A"><FaYoutube size={25} /></a>
       <a href="https://yandex.ru/maps/-/CDSqnTOz"><FaMapMarkerAlt size={25} /></a>
     </div>

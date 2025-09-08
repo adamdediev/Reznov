@@ -334,6 +334,9 @@
             border: 1px solid $page-default-color;
             background: transparent;
             color: $page-default-color;
+            &:hover{
+            background: rgba(255, 255, 255, 0.15);
+            }
         }
     }
 }

@@ -41,7 +41,7 @@ const StoryCardMobile = ({ slides }) => {
                 </ul>
               </div>
               <div className="story__content-video">
-                <video autoPlay loop muted>
+                <video autoPlay loop muted playsInline>
                   <source src={slide.videoSrc} type="video/mp4" />
                   Ваш браузер не поддерживает видео.
                 </video>

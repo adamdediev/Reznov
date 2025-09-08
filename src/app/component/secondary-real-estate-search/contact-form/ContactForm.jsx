@@ -20,7 +20,7 @@ export default function ContactForm() {
           <div className="md:mt-8 mt-0 flex flex-wrap gap-4 items-center">
             Или напишите нам в:
             <a
-              href="https://t.me/sevoden1"
+              href="https://t.me/reznov_realty"
               target="_blank"
               className="flex items-center gap-2 px-4 py-2 bg-[#fff] text-gray-900 font-medium rounded-lg hover:bg-[#6FBAD0] transition"
             >
@@ -28,7 +28,7 @@ export default function ContactForm() {
               Telegram
             </a>
             <a
-              href="https://api.whatsapp.com/send/?phone=%2B79261664257&text&type=phone_number&app_absent=0"
+              href="https://wa.me/89251758526"
               target="_blank"
               className="flex  items-center gap-2 px-4 py-2 bg-[#25D366] text-white font-medium rounded-lg hover:bg-[#1DA955] transition"
             >

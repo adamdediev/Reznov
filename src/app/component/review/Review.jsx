@@ -57,6 +57,7 @@ export default function Review() {
         </div>
         </div>
         <div className="text-white mt-3 text-center">Больше отзывов на <a className="border-b border-white" href="https://yandex.ru/maps/-/CDSqnTOz">Яндекс картах</a></div>
+        <iframe src="https://yandex.ru/sprav/widget/rating-badge/147712595887?type=rating&theme=dark" style={{margin:"10px auto 0px"}} width="150" height="50" frameBorder="0"></iframe>
      </div>
     
     </section>

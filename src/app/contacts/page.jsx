@@ -39,8 +39,8 @@ export default function Page() {
           <div className="space-y-4 text-gray-300">
             <p className="flex items-center gap-2">
               <Phone className="w-5 h-5 text-[#85CEE4]" />
-              <a href="tel:88002017881" className="hover:underline">
-                8 800 201-78-81
+              <a href="tel:89251758526" className="hover:underline">
+                8 925 175-85-26
               </a>
             </p>
             <p className="flex items-center gap-2">
@@ -51,12 +51,12 @@ export default function Page() {
             </p>
             <p className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-[#85CEE4]" />
-              г. Москва, пр-д Серебрякова, д. 14, стр. 15
+              Москва, Бауманская ул, 6с2
             </p>
           </div>
           <div className="mt-8 space-y-6 text-gray-300">
             <div>
-              <h2 className="text-xl font-semibold text-[#85CEE4] mb-4">Отдел партнёрств</h2>
+              <h2 className="text-xl font-semibold text-[#85CEE4] mb-4">Для партнеров</h2>
               <p className="flex items-center gap-2 mt-2">
                 <Phone className="w-5 h-5 text-[#85CEE4]" />
                 <a href="tel:89252655520" className="hover:underline">
@@ -89,7 +89,7 @@ export default function Page() {
           </div>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="https://t.me/sevoden1"
+              href="https://t.me/reznov_realty"
               target="_blank"
               className="flex items-center gap-2 px-4 py-2 bg-[#85CEE4] text-gray-900 font-medium rounded-lg hover:bg-[#6FBAD0] transition"
             >
@@ -97,7 +97,7 @@ export default function Page() {
               Telegram
             </a>
             <a
-              href="https://api.whatsapp.com/send/?phone=%2B79261664257&text&type=phone_number&app_absent=0"
+              href="https://wa.me/89251758526"
               target="_blank"
               className="flex  items-center gap-2 px-4 py-2 bg-[#25D366] text-white font-medium rounded-lg hover:bg-[#1DA955] transition"
             >
@@ -107,14 +107,8 @@ export default function Page() {
           </div>
         </div>
         <div className="max-h-96 "> 
-          <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a74ce72fd65c86cf6d665330cbb689183ffe4495a08e964ee86507a5ab5eea2&amp;source=constructor"
-            width="100%"
-            height="100%"
-            className="rounded-2xl border-0 min-h-[300px]"
-            allowFullScreen
-          ></iframe>
-          
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5a74ce72fd65c86cf6d665330cbb689183ffe4495a08e964ee86507a5ab5eea2&amp;source=constructor" width="100%" height="100%" frameborder="0"       className="rounded-2xl border-0 min-h-[300px]"
+            allowFullScreen></iframe>
         </div>
       </div>
     </div>

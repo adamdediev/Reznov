@@ -113,6 +113,9 @@
             border: 1px solid $page-default-color;
             border-radius: $border;
             margin-top: 24px;
+            &:hover{
+                background: rgba(255, 255, 255, 0.15);
+            }
             @include respond-to($tablet){
                 font-size: 1.2rem;
                 padding: 24px 25px;
@@ -124,6 +127,9 @@
                 background: $page-default-color;
                 color: #000;
                 font-weight: 500;
+                  &:hover{
+                background: $primary;
+                }
             }
         }
         h1{

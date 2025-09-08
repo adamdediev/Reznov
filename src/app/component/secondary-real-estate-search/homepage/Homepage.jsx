@@ -26,7 +26,7 @@ export default function Homepage() {
         <Image className="md:hidden block" src={homepageMobile} alt="textСircle" role="presentation" />
         <Image className="md:block hidden" src={homepage} alt="textСircle" role="presentation" />
         </div>     
-        <button className='homepage-secondary__btn md:hidden block' onClick={handleOpen}>ХОЧУ ПРОДАТЬ</button>
+        <button className='homepage-secondary__btn md:hidden block' onClick={handleOpen}>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>
         </div>
     </section>
     <DialogWithForm open={open} setOpen={setOpen}  />
