@@ -4,6 +4,7 @@ import Suggest from '../component/secondary-real-estate-search/suggest/Suggest';
 import WhereWork from '../component/secondary-real-estate-search/where-work/WhereWork';
 import Steps from '../component/secondary-real-estate-search/steps/Steps';
 import ContactForm from '../component/secondary-real-estate-search/contact-form/ContactForm';
+import YandexReviews from '../component/yandex-reviews/YandexReviews';
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
@@ -38,6 +39,7 @@ export default function page() {
       <Homepage />
       <Suggest />
       <WhereWork />
+      <YandexReviews/>
       <Steps />
       <ContactForm />
     </main>

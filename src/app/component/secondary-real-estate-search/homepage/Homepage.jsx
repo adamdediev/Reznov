@@ -15,9 +15,17 @@ export default function Homepage() {
     <section className="mt-8 mb-8 md:mb-16">
         <div className="container homepage-secondary">
         <div className="homepage-secondary__content">
-          <h1><strong> Профессионально подберем недвижимость по вашим параметрам </strong></h1>
+          <h1><strong>Профессионально подбор недвижимости</strong></h1>
           <div> <strong>
-            Найдем лучший вариант в вашем бюджете, поторгуемся с собственником и проведем сделку под ключ на <strong className='font-semibold'>ВАШИХ</strong>  условиях
+            
+
+<strong className='font-semibold'>Для Вас:</strong> 
+Подберем лучший вариант всего за 14 дней
+Получим скидку на квартиру до 30%
+Поможем получить одобрение ипотеки со ставкой от 6%
+Проверим юридическую чистоту объекта по 12 параметрам
+Проведем сделку под ключ <strong className='font-semibold'> на Ваших условиях</strong>  
+            
             </strong>
             </div>
           <button onClick={handleOpen}>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</button>

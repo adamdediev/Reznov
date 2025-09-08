@@ -26,8 +26,8 @@
             font-size: 2rem;
             text-transform: uppercase;
             line-height: 125%;
-            @include respond-to($tablet){
-                font-size: 2rem; 
+            @include respond-to($mobile){
+                font-size: 1.6rem; 
             }
         }
         div{
@@ -36,6 +36,8 @@
             max-width: 450px;
             @include respond-to($tablet){
                 font-size: 1rem; 
+                max-width: 100%;
+                margin-bottom: 1rem;
             }
         }
         button{

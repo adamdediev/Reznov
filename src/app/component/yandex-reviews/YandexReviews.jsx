@@ -1,6 +1,7 @@
 export default function YandexReviews() {
   return (
-    <div className="container-iframe"
+    <div className="container">
+    <div className="container-iframe "
       style={{
         width: "100%",
         height: "800px",
@@ -44,6 +45,7 @@ export default function YandexReviews() {
       >
         Reznov на карте Москвы — Яндекс Карты
       </a>
+    </div>
     </div>
   );
 }

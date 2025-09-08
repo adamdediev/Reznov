@@ -3,7 +3,6 @@ import Homepage from '../component/countryside/homepage/Homepage';
 import Chips from '../component/countryside/chips/Chips';
 import PhotoGallery from '../component/countryside/photo-gallery/PhotoGallery';
 import ContactFormCountryside from '../component/countryside/contact-form-countryside/ContactFormCountryside';
-import YandexReviews from '../component/yandex-reviews/YandexReviews';
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
@@ -37,7 +36,6 @@ export default function page() {
       <Homepage />
       <Chips />
       <PhotoGallery />
-      <YandexReviews />
       <ContactFormCountryside />
     </main>
   )
