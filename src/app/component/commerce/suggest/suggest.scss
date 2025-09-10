@@ -53,7 +53,6 @@
       padding: 50px ;
       margin-bottom: 20px;
       &:hover{
-        background: #1F1F1F;
         font-size: 20px;
       }
     }
@@ -231,6 +230,17 @@
   }
 }
 
+.suggest {
+  &::after {
+    content: "";
+    display: none;
+    background: url("/image/offices-hover.jpg") no-repeat,
+                url("/image/retail-hover.jpg") no-repeat,
+                url("/image/nonstationary-hover.jpg") no-repeat,
+                url("/image/new-complex-hover.jpg") no-repeat,
+                url("/image/standalone-hover.jpg") no-repeat;
+  }
+}
 
 
 

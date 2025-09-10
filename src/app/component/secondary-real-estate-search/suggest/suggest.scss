@@ -54,7 +54,6 @@
       padding: 50px ;
       margin-bottom: 20px;
       &:hover{
-        background: #1F1F1F;
         font-size: 20px;
       }
     }
@@ -235,7 +234,18 @@
       }
     }
   }
+  &::after {
+    content: "";
+    display: none;
+    background: 
+      url("/image/secondary-real-estate-search/secondary-real-estate-search-ready-apartament.jpg") no-repeat,
+      url("/image/secondary-real-estate-search/secondary-real-estate-search-new-building.jpg") no-repeat,
+      url("/image/secondary-real-estate-search/secondary-real-estate-search-land-plot.jpg") no-repeat,
+      url("/image/secondary-real-estate-search/secondary-real-estate-search-townhouse.jpg") no-repeat,
+      url("/image/secondary-real-estate-search/secondary-real-estate-search-business-premises.jpg") no-repeat;
+  }
 }
+
 
 
 

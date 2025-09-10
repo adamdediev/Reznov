@@ -10,6 +10,7 @@
     flex-direction: column;
     padding-bottom: 40px;
     }
+  
     &__image{
         width: 100%;
     }
@@ -32,10 +33,9 @@
         }
         div{
             margin-top: 1rem;
-            font-size: 20px;
+            font-size: 1rem;
             max-width: 450px;
             @include respond-to($tablet){
-                font-size: 1rem; 
                 max-width: 100%;
                 margin-bottom: 1rem;
             }
