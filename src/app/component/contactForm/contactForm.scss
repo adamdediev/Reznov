@@ -106,6 +106,13 @@
   &.last-group {
     margin-bottom: 1.5rem;
   }
+  &__privacy{
+  font-size: 14px;
+  color: #fff;
+  a{
+        border-bottom: 1px solid;
+  }
+  }
 }
 
 .form-label {

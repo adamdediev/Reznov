@@ -107,6 +107,8 @@ export default function Form({ onSuccess }) {
        <p className={`${errors.phone ? "opacity-100" : "opacity-0"} text-red-500 text-sm`}>Введите корректный номер телефона</p>
       </div>
 
+      <span className="form-group__privacy" >Заполняя форму, вы даете <a href="/privacy">согласие на обработку персональных данных</a></span>
+
       <button  onClick={handleSubmit} type="submit" className={`${disable ? 'opacity-50':''} form-button`} disabled={disable} >свяжитесь со мной</button>
 
       
