@@ -25,7 +25,14 @@ export default function DialogWithForm({open,setOpen}) {
                     Обратный Звонок 
                   </DialogTitle>
                 </div>
-             <Form onSuccess ={()=>{setOpen(false)}}/>
+            <Form 
+              onSuccess={()=>{
+                setOpen(false) 
+                if (typeof window !== "undefined" && window.ym) {
+                  window.ym(84225793, "reachGoal", "lead_callback")
+                }
+              }} 
+            />
           </div>
           </DialogPanel>
         </div>

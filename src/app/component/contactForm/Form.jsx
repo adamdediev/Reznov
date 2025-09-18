@@ -62,7 +62,10 @@ export default function Form({ onSuccess }) {
         setName('')
         setPhone('')
         setErrors({ name: '', phone: '' })
-
+       
+        if(onSuccess){
+              onSuccess()
+        }
         setTimeout(() => setStatus({ type: '', message: '' }), 3000)
       } else {
         setStatus({ type: 'error', message: 'Ошибка при отправке: ' + (data.error || JSON.stringify(data)) })
@@ -72,9 +75,6 @@ export default function Form({ onSuccess }) {
     }
      finally{
       setDisable(false)
-    }
-    if(onSuccess){
-      onSuccess()
     }
   }
 

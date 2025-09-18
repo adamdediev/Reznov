@@ -1,3 +1,4 @@
+"use client"
 import Form from './Form';
 
 export default function ContactForm() {
@@ -10,7 +11,13 @@ export default function ContactForm() {
           <p>профессионалам</p>
           </div>
           <div className="contact-form__formgroup md:w-1/2 w-full">
-            <Form/>
+            <Form 
+              onSuccess={()=>{
+                if (typeof window !== "undefined" && window.ym) {
+                  window.ym(84225793, "reachGoal", "lead_podbor")
+                }
+              }} 
+            />
           </div>
         </div>
     </section>

@@ -1,4 +1,4 @@
-
+"use client"
 import Form from '../../contactForm/Form';
 import { MessageCircle } from 'lucide-react';
 import { FaTelegramPlane } from 'react-icons/fa';
@@ -14,7 +14,13 @@ export default function ContactForm() {
             <span>Покупка недвижимости вашей мечты уже на шаг ближе</span>
           </div>
           <div className="contact-form__formgroup md:w-1/2 w-full">
-            <Form/>
+            <Form 
+              onSuccess={()=>{
+                if (typeof window !== "undefined" && window.ym) {
+                  window.ym(84225793, "reachGoal", "lead_podbor")
+                }
+              }} 
+            />
           </div>
         </div>
           <div className="md:mt-8 mt-0 flex flex-wrap gap-4 items-center">
