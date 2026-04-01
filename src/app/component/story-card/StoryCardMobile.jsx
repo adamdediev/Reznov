@@ -1,5 +1,6 @@
 'use client';
 
+import { useRef } from 'react';
 import Carousel from '../carousel/Carousel';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -8,11 +9,39 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
 const StoryCardMobile = ({ slides }) => {
+  const videoRefs = useRef([]);
+
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '   story__swiper-pagination">' + (index + 1) + '</span>';
+      return (
+        '<span class="' +
+        className +
+        ' story__swiper-pagination">' +
+        (index + 1) +
+        '</span>'
+      );
     },
+  };
+
+  const handleVideoClick = (index) => {
+    const video = videoRefs.current[index];
+
+    if (video) {
+      video.muted = !video.muted;
+      video.play();
+    }
+  };
+
+  // 🔥 ВОТ ЭТО ГЛАВНОЕ
+  const handleSlideChange = () => {
+    videoRefs.current.forEach((video) => {
+      if (video) {
+        video.pause();      // стопаем
+        video.currentTime = 0; // сбрасываем (опционально)
+        video.muted = true; // возвращаем в mute
+      }
+    });
   };
 
   return (
@@ -20,6 +49,7 @@ const StoryCardMobile = ({ slides }) => {
       pagination={pagination}
       modules={[Pagination]}
       className="mySwiper"
+      onSlideChange={handleSlideChange} // 👈 добавили
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
@@ -31,17 +61,28 @@ const StoryCardMobile = ({ slides }) => {
                 image3={slide.images[2]}
               />
             </div>
+
             <div className="story__content">
               <div className="story__content-text">
-                <div className="story__content-title">{slide.title}</div>
+                <div className="story__content-title">
+                  {slide.title}
+                </div>
                 <ul>
                   {slide.listItems.map((item, idx) => (
                     <li key={idx}>{item}</li>
                   ))}
                 </ul>
               </div>
+
               <div className="story__content-video">
-                <video autoPlay loop muted playsInline>
+                <video
+                  ref={(el) => (videoRefs.current[index] = el)}
+                  loop
+                  muted
+                  playsInline
+                  onClick={() => handleVideoClick(index)}
+                  style={{ cursor: 'pointer' }}
+                >
                   <source src={slide.videoSrc} type="video/mp4" />
                   Ваш браузер не поддерживает видео.
                 </video>
@@ -51,7 +92,6 @@ const StoryCardMobile = ({ slides }) => {
           </div>
         </SwiperSlide>
       ))}
-      
     </Swiper>
   );
 };

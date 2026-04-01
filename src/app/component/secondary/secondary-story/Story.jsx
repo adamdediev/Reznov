@@ -21,8 +21,8 @@ export default function Story() {
         'через неделю после обращения к нам был получен аванс',
         'апартаменты проданы за 8,8 млн руб.',
       ],
-      videoSrc: '/video/Sergey.mp4',
-      images: [Sergey1, Sergey2, Sergey3],
+      videoSrc: '/video/Yulya.mp4',
+      images: [Yulya1, Yulya2, Yulya3],
     },
     {
       title: 'Сергей работал с риелтором, но тот практически год не мог продать его трехкомнатную квартиру за 15,5 млн руб.',
@@ -30,8 +30,8 @@ export default function Story() {
         'мы продали квартиру за месяц',
         'квартира продана за 17,2 млн руб.',
       ],
-      videoSrc: '/video/Irina.mp4',
-      images: [Irina1, Irina2, Irina3], 
+      videoSrc: '/video/Sergey.mp4',
+      images: [Sergey1, Sergey2, Sergey3], 
     },
     {
       title: 'Ирина уже нашла покупателя на свою квартиру, но тот продавливал ее по цене и прочим условиям покупки. Двухкомнатную квартиру евро-формата она уже почти продала за 8 млн руб.',
@@ -39,8 +39,8 @@ export default function Story() {
         'мы отстояли интересы клиента, сделка прошла на наших условиях',
         'квартира продана нами за 9,2 млн руб.',
       ],
-      videoSrc: '/video/Yulya.mp4',
-      images: [Yulya1, Yulya2, Yulya3], 
+      videoSrc: '/video/Irina.mp4',
+      images: [Irina1, Irina2, Irina3], 
     },
   ];
 
