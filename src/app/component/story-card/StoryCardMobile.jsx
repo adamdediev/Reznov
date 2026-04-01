@@ -79,6 +79,7 @@ const StoryCardMobile = ({ slides }) => {
                   ref={(el) => (videoRefs.current[index] = el)}
                   loop
                   muted
+                  autoPlay
                   playsInline
                   onClick={() => handleVideoClick(index)}
                   style={{ cursor: 'pointer' }}
